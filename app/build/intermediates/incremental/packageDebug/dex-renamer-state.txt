@@ -1,0 +1,7 @@
+#Mon Nov 14 12:11:17 GMT 2016
+base.0=/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2b718538339d9c7db22f57594f73baff6be95d15
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b84b9f3f145aef0028568731d8df929f971ff229/classes.dex
+base.1=/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b84b9f3f145aef0028568731d8df929f971ff229
+file.0=/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2b718538339d9c7db22f57594f73baff6be95d15/classes.dex

@@ -1,3 +1,3 @@
 # group26
-this is a test line
-pushed from my machine terminal
+
+--Don't forget to use the readme file
