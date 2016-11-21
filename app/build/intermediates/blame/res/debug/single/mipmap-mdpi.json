@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\Edwar\\StudioProjects\\group26\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "C:\\Users\\Edwar\\StudioProjects\\group26\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/home/Projects/udacity-tutorial/Project26/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\home\\Projects\\udacity-tutorial\\Project26\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "C:\\Users\\home\\Projects\\udacity-tutorial\\Project26\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/home/Projects/android/Project26/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     }
 ]
