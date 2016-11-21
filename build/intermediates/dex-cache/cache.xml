@@ -2,157 +2,139 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_3e5ee074217149dde0b7d93a7aff4fb2d3427031/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_629b17ad4a929e1b587df13796f86a5fe899d1f4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_37b31d35d36a8c3b3f7d5d57ef478fb8e67b3647/classes.dex" />
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.0_45fcfb1e2075bf23ca090613bf477005798eba69.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.0_34b00dca5fc2e58bd6d0da61d02d151054831543.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_ac5c93da3ab35ffafa58b6d2db8eb006cc2af0ae/classes.dex" />
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_b1c467a1225b6014a63e094337e62e1c55aba424.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_68eb9606ec832455b4e676427632f5671b5f55c2/classes.dex" />
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_0b18922244baca07a89e8715ea0e4db9088a3ca8.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_1642b314edfd38c53270113eb9a4f819ac1f5cb3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_fb9c20bf2732957a10e2a8600c6c611f4fa51034/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_4f2459eda6fb87a6e6a2ad93759781f78444498c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="87bbbc8c38059bb8785fcfa48f473e4df77a85d7">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b84b9f3f145aef0028568731d8df929f971ff229/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="26674000177e45447a0326a6ad84612761199a13">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_ac2ee8502a6248028dfa0af174963d3819a2c108/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_67fe80cc79c95303b614c1acb80468e5a95749c9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_f2c54fc3c74d18f958abf285c8c6e3a82f878a78/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Edwar\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_5e6a30fae6ee5424a7c0691fa581927b888c6f0b/classes.dex" />
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.0_e41854ec1bf7d06cd0ee5e0298ff245cfaa3d126.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_02293493b7773d049c4556c88b167e67a9cf0ca2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_8c2c41e5c975365b79f7da327936380a129803aa/classes.dex" />
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.0_f4733d847d5b7032e67f4ece10a790288ec10396.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_8c28f69a34812ef9aef4916fa3dd9f03e49deddd/classes.dex" />
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.0_8dbe9fbd8d4cbb6cd48a292d42c79af8b0c60e46.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="aecf6aea578f08d691fcd42485d153440dbedaf8">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2b718538339d9c7db22f57594f73baff6be95d15/classes.dex" />
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_8effb99308d5a82fc90e29b14d15ebabe9ead7d0.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
-        <dex dex="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_165f437fcc6da17fa450ca16db0f5796e5c1b970/classes.dex" />
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.0_89f902cca7c04db796f39d7aaa588f30a6b8d7d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.0_43feb591256b470dbe0099fd8e1d553246d9b30f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.0_c41b42b9c98cc1af180035026270609c4c9828c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.0_7d3767d558cff5804682dfa38f5a6b7402520949.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_29f4bb40f90a376ea880ccf79b552f99971ec765.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\Users\Edwar\StudioProjects\group26\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.0_e0ed7503166837ffe4cba335dab39360d94b2c7e.jar" />
     </item>
 
 </items>
