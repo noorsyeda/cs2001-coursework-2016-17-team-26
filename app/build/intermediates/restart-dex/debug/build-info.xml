@@ -5,59 +5,47 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="75022346987414"
-    token="-5218076880758108426"
+    timestamp="89046121066004"
+    token="4810469020312087223"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="292" />
+        duration="268" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="23" />
+        duration="40" />
     <task
         name="verifier"
-        duration="1" />
+        duration="0" />
 
-    <artifact
-        location="/Users/home/Projects/android/Project26/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="/Users/home/Projects/android/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-        type="DEX" />
     <artifact
         location="/Users/home/Projects/android/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
         type="DEX" />
 
     <build
-        timestamp="73932807230982"
+        timestamp="81866044328764"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/home/Projects/android/Project26/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="75022346987414"
+        timestamp="88100641980176"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/home/Projects/android/Project26/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
             type="RESOURCES" />
-        <artifact
-            location="/Users/home/Projects/android/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
+    </build>
+    <build
+        timestamp="89046121066004"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/home/Projects/android/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
             type="DEX" />
-    </build>
-    <build
-        timestamp="121542799834055"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/Users/home/Projects/udacity-tutorial/Project26/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
-        "source": "/Users/home/Projects/udacity-tutorial/Project26/app/src/main/res/mipmap-hdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
         "source": "/Users/home/Projects/android/Project26/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     }
