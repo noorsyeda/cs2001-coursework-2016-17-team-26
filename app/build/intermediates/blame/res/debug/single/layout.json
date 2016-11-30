@@ -36,6 +36,10 @@
         "source": "/Users/home/Projects/android/Project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_screen_content_include.xml"
     },
     {
+        "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/layout/image_output.xml",
+        "source": "/Users/home/Projects/android/Project26/app/src/main/res/layout/image_output.xml"
+    },
+    {
         "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
         "source": "/Users/home/Projects/android/Project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_action_mode_close_item_material.xml"
     },

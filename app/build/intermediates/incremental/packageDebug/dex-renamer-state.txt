@@ -1,4 +1,4 @@
-#Fri Nov 25 01:29:04 GMT 2016
+#Wed Nov 30 00:49:07 GMT 2016
 base.0=/Users/home/Projects/android/Project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3fdbd26a00f9d84532bbd28628834e0244ad1ffb
 renamed.1=classes.dex
 renamed.0=classes2.dex

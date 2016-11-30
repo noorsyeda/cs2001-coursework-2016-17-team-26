@@ -1,9 +1,11 @@
 package com.example.android.project26;
 
 import android.Manifest;
-import android.app.NotificationManager;
+
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.graphics.ImageFormat;
 import android.graphics.SurfaceTexture;
 import android.hardware.camera2.CameraAccessException;
@@ -17,16 +19,12 @@ import android.hardware.camera2.TotalCaptureResult;
 import android.hardware.camera2.params.StreamConfigurationMap;
 import android.media.Image;
 import android.media.ImageReader;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
-
-import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.format.DateFormat;
 import android.util.Log;
@@ -36,10 +34,8 @@ import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
-
-
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -50,12 +46,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class MainActivity extends AppCompatActivity {
+    public static final int REQUEST_CAMERA_PERMISSION = 200;
+    public static final int CAMERA_REQUEST = 1888;
     private static final String TAG = "AndroidCameraApi";
-    private Button takePictureButton;
-    private TextureView textureView;
-    public String directory =  "/folder";
     private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
     static {
         ORIENTATIONS.append(Surface.ROTATION_0, 90);
@@ -63,35 +57,15 @@ public class MainActivity extends AppCompatActivity {
         ORIENTATIONS.append(Surface.ROTATION_180, 270);
         ORIENTATIONS.append(Surface.ROTATION_270, 180);
     }
-    private String cameraId;
+
     protected CameraDevice cameraDevice;
     protected CameraCaptureSession cameraCaptureSessions;
     protected CaptureRequest captureRequest;
     protected CaptureRequest.Builder captureRequestBuilder;
+    private Button takePictureButton;
+    private TextureView textureView;
+    private String cameraId;
     private Size imageDimension;
-    private ImageReader imageReader;
-    private File file;
-    private static final int REQUEST_CAMERA_PERMISSION = 200;
-    private boolean mFlashSupported;
-    private Handler mBackgroundHandler;
-    private HandlerThread mBackgroundThread;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        textureView = (TextureView) findViewById(R.id.texture);
-        assert textureView != null;
-        textureView.setSurfaceTextureListener(textureListener);
-        takePictureButton = (Button) findViewById(R.id.btn_takepicture);
-        assert takePictureButton != null;
-        takePictureButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                takePicture();
-                sendNotification();
-            }
-        });
-    }
     TextureView.SurfaceTextureListener textureListener = new TextureView.SurfaceTextureListener() {
         @Override
         public void onSurfaceTextureAvailable(SurfaceTexture surface, int width, int height) {
@@ -110,6 +84,10 @@ public class MainActivity extends AppCompatActivity {
         public void onSurfaceTextureUpdated(SurfaceTexture surface) {
         }
     };
+    private ImageReader imageReader;
+    private File file;
+    private boolean mFlashSupported;
+    private Handler mBackgroundHandler;
     private final CameraDevice.StateCallback stateCallback = new CameraDevice.StateCallback() {
         @Override
         public void onOpened(CameraDevice camera) {
@@ -128,6 +106,72 @@ public class MainActivity extends AppCompatActivity {
             cameraDevice = null;
         }
     };
+    private HandlerThread mBackgroundThread;
+    private View view;
+    private ImageView imageView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        textureView = (TextureView) findViewById(R.id.texture);
+        assert textureView != null;
+        textureView.setSurfaceTextureListener(textureListener);
+        takePictureButton = (Button) findViewById(R.id.btn_takepicture);
+        assert takePictureButton != null;
+        takePictureButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                takePicture();
+                takePictureButton.setVisibility(View.INVISIBLE);
+
+
+                final Button retryButton = (Button) findViewById(R.id.btn_retry);
+                final Button tickButton = (Button) findViewById(R.id.btn_tick);
+                retryButton.setVisibility(View.VISIBLE);
+                retryButton.setOnClickListener(new Button.OnClickListener()
+                {
+                    public void onClick(View v)
+                    {
+                        createCameraPreview();
+                        tickButton.setVisibility(View.INVISIBLE);
+                        retryButton.setVisibility(View.INVISIBLE);
+                        takePictureButton.setVisibility(View.VISIBLE);
+                    }
+                });
+                    retryButton.setVisibility(View.VISIBLE); //SHOW the button
+
+
+                tickButton.setVisibility(View.VISIBLE);
+                tickButton.setOnClickListener(new Button.OnClickListener()
+                {
+                    public void onClick(View v)
+                    {
+                        createCameraPreview();
+                        tickButton.setVisibility(View.INVISIBLE);
+                        retryButton.setVisibility(View.INVISIBLE);
+                        takePictureButton.setVisibility(View.VISIBLE);
+                    }
+                });
+                tickButton.setVisibility(View.VISIBLE); //SHOW the button
+            }
+        });
+
+
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == CAMERA_REQUEST && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+            imageView.setImageBitmap(imageBitmap);
+        }
+    }
+
     protected void startBackgroundThread() {
         mBackgroundThread = new HandlerThread("Camera Background");
         mBackgroundThread.start();
@@ -143,6 +187,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
     protected void takePicture() {
         if(null == cameraDevice) {
             Log.e(TAG, "cameraDevice is null");
@@ -200,6 +245,9 @@ public class MainActivity extends AppCompatActivity {
                         if (image != null) {
                             image.close();
                         }
+//                        Intent displayPicture = new Intent(MainActivity.this ,
+//                                PictureOutput.class);
+//                        MainActivity.this.startActivity(displayPicture);
                     }
                 }
 
@@ -216,12 +264,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             };
             reader.setOnImageAvailableListener(readerListener, mBackgroundHandler);
+
             final CameraCaptureSession.CaptureCallback captureListener = new CameraCaptureSession.CaptureCallback() {
                 @Override
                 public void onCaptureCompleted(CameraCaptureSession session, CaptureRequest request, TotalCaptureResult result) {
                     super.onCaptureCompleted(session, request, result);
-//                    Toast.makeText(MainActivity.this, "Saved:" + file, Toast.LENGTH_SHORT).show();
-                    createCameraPreview();
+                    Toast.makeText(MainActivity.this, "Saved:" + file, Toast.LENGTH_SHORT).show();
+//                    createCameraPreview();
                 }
             };
             cameraDevice.createCaptureSession(outputSurfaces, new CameraCaptureSession.StateCallback() {
@@ -240,19 +289,6 @@ public class MainActivity extends AppCompatActivity {
         } catch (CameraAccessException e) {
             e.printStackTrace();
         }
-    }
-
-    public void sendNotification() {
-
-        NotificationCompat.Builder mBuilder =
-                new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.orange_buttonx2)
-                        .setContentTitle("project26")
-                        .setContentText("the file was saved in: " + "/0/project26/");
-
-        NotificationManager mNotificationManager =
-                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        mNotificationManager.notify(001, mBuilder.build());
     }
 
     protected void createCameraPreview() {
@@ -348,7 +384,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         Log.e(TAG, "onPause");
-        //closeCamera();
         stopBackgroundThread();
         super.onPause();
         closeCamera();

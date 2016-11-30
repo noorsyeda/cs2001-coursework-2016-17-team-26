@@ -4,8 +4,16 @@
         "source": "/Users/home/Projects/android/Project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
+        "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/retry.png",
+        "source": "/Users/home/Projects/android/Project26/app/src/main/res/drawable/retry.png"
+    },
+    {
         "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/camera_button.xml",
         "source": "/Users/home/Projects/android/Project26/app/src/main/res/drawable/camera_button.xml"
+    },
+    {
+        "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/tick.png",
+        "source": "/Users/home/Projects/android/Project26/app/src/main/res/drawable/tick.png"
     },
     {
         "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
@@ -36,16 +44,16 @@
         "source": "/Users/home/Projects/android/Project26/app/src/main/res/drawable/orange_buttonx2.png"
     },
     {
+        "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/camera_icon_hover.png",
+        "source": "/Users/home/Projects/android/Project26/app/src/main/res/drawable/camera_icon_hover.png"
+    },
+    {
         "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
         "source": "/Users/home/Projects/android/Project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_borderless_material.xml"
     },
     {
         "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
         "source": "/Users/home/Projects/android/Project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_vector_test.xml"
-    },
-    {
-        "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/camera_icon_hover.png",
-        "source": "/Users/home/Projects/android/Project26/app/src/main/res/drawable/camera_icon_hover.png"
     },
     {
         "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
@@ -76,12 +84,12 @@
         "source": "/Users/home/Projects/android/Project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
-        "source": "/Users/home/Projects/android/Project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_clear_material.xml"
-    },
-    {
         "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/camera_icon.png",
         "source": "/Users/home/Projects/android/Project26/app/src/main/res/drawable/camera_icon.png"
+    },
+    {
+        "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/Users/home/Projects/android/Project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_clear_material.xml"
     },
     {
         "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
@@ -130,6 +138,10 @@
     {
         "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
         "source": "/Users/home/Projects/android/Project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/orange_buttonx_hover.png",
+        "source": "/Users/home/Projects/android/Project26/app/src/main/res/drawable/orange_buttonx_hover.png"
     },
     {
         "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
