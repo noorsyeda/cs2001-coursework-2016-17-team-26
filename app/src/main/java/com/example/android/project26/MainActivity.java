@@ -4,6 +4,7 @@ import android.Manifest;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.ImageFormat;
@@ -60,12 +61,15 @@ public class MainActivity extends AppCompatActivity {
 
     protected CameraDevice cameraDevice;
     protected CameraCaptureSession cameraCaptureSessions;
-    protected CaptureRequest captureRequest;
     protected CaptureRequest.Builder captureRequestBuilder;
     private Button takePictureButton;
+    private Button retryButton;
+    private Button acceptButton;
     private TextureView textureView;
     private String cameraId;
     private Size imageDimension;
+
+
     TextureView.SurfaceTextureListener textureListener = new TextureView.SurfaceTextureListener() {
         @Override
         public void onSurfaceTextureAvailable(SurfaceTexture surface, int width, int height) {
@@ -114,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         textureView = (TextureView) findViewById(R.id.texture);
         assert textureView != null;
         textureView.setSurfaceTextureListener(textureListener);
@@ -128,38 +132,37 @@ public class MainActivity extends AppCompatActivity {
                 takePictureButton.setVisibility(View.INVISIBLE);
 
 
-                final Button retryButton = (Button) findViewById(R.id.btn_retry);
-                final Button tickButton = (Button) findViewById(R.id.btn_tick);
+                retryButton = (Button) findViewById(R.id.btn_retry);
+                acceptButton = (Button) findViewById(R.id.btn_analyze);
                 retryButton.setVisibility(View.VISIBLE);
+                acceptButton.setVisibility(View.INVISIBLE);
                 retryButton.setOnClickListener(new Button.OnClickListener()
                 {
                     public void onClick(View v)
                     {
                         createCameraPreview();
-                        tickButton.setVisibility(View.INVISIBLE);
                         retryButton.setVisibility(View.INVISIBLE);
+                        acceptButton.setVisibility(View.INVISIBLE);
                         takePictureButton.setVisibility(View.VISIBLE);
+
                     }
                 });
-                    retryButton.setVisibility(View.VISIBLE); //SHOW the button
+                retryButton.setVisibility(View.VISIBLE); //SHOW the button
 
 
-                tickButton.setVisibility(View.VISIBLE);
-                tickButton.setOnClickListener(new Button.OnClickListener()
+                acceptButton.setOnClickListener(new Button.OnClickListener()
                 {
                     public void onClick(View v)
                     {
                         createCameraPreview();
-                        tickButton.setVisibility(View.INVISIBLE);
                         retryButton.setVisibility(View.INVISIBLE);
+                        acceptButton.setVisibility(View.INVISIBLE);
                         takePictureButton.setVisibility(View.VISIBLE);
                     }
                 });
-                tickButton.setVisibility(View.VISIBLE); //SHOW the button
+                acceptButton.setVisibility(View.VISIBLE); //SHOW the button
             }
         });
-
-
 
     }
 
@@ -250,7 +253,6 @@ public class MainActivity extends AppCompatActivity {
 //                        MainActivity.this.startActivity(displayPicture);
                     }
                 }
-
                 private void save(byte[] bytes) throws IOException {
                     OutputStream output = null;
                     try {
@@ -372,6 +374,7 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     protected void onResume() {
+        takePictureButton.setVisibility(View.VISIBLE);
         super.onResume();
         Log.e(TAG, "onResume");
         startBackgroundThread();
@@ -383,6 +386,8 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     protected void onPause() {
+        retryButton.setVisibility(View.INVISIBLE);
+        acceptButton.setVisibility(View.INVISIBLE);
         Log.e(TAG, "onPause");
         stopBackgroundThread();
         super.onPause();
