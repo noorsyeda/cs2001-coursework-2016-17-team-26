@@ -22,8 +22,8 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center_horizontal|bottom"
-            android:background="@drawable/camera_button"
             android:layout_marginBottom="80dp"
+            android:background="@drawable/camera_button"
             android:visibility="visible"/>
 
         <Button
@@ -33,10 +33,10 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_gravity="left|bottom"
-            android:background="@drawable/retry"
             android:layout_marginBottom="80dp"
-            android:visibility="invisible"
-            android:layout_marginLeft="60dp" />
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/retry"
+            android:visibility="invisible" />
 
         <Button
             android:id="@+id/btn_analyze"
@@ -45,17 +45,17 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_gravity="right|bottom"
-            android:background="@drawable/analyze"
             android:layout_marginBottom="80dp"
-            android:visibility="invisible"
-            android:layout_marginRight="60dp" />
+            android:layout_marginRight="60dp"
+            android:background="@drawable/analyze"
+            android:visibility="invisible" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="center_horizontal|center_vertical|bottom"
-            android:background="#4D000000">
+            android:background="#4D000000"
+            android:orientation="horizontal">
 
             <Button
                 android:layout_width="wrap_content"

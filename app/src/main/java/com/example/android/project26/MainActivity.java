@@ -28,6 +28,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.format.DateFormat;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.Size;
 import android.util.SparseIntArray;
@@ -297,7 +298,12 @@ public class MainActivity extends AppCompatActivity {
         try {
             SurfaceTexture texture = textureView.getSurfaceTexture();
             assert texture != null;
-            texture.setDefaultBufferSize(imageDimension.getWidth(), imageDimension.getHeight());
+            DisplayMetrics displaymetrics = new DisplayMetrics();
+            getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
+            int height = displaymetrics.heightPixels;
+            int width = displaymetrics.widthPixels;
+            texture.setDefaultBufferSize(height, width);
+
             Surface surface = new Surface(texture);
             captureRequestBuilder = cameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_PREVIEW);
             captureRequestBuilder.addTarget(surface);
