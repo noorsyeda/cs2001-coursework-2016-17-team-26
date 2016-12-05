@@ -39,6 +39,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 import java.io.File;
+import java.io.FileFilter;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -141,6 +142,8 @@ public class MainActivity extends AppCompatActivity {
                 {
                     public void onClick(View v)
                     {
+                        File folder = new File(Environment.getExternalStorageDirectory() + "");
+                        lastFileModified(folder+ "/project26").delete();
                         createCameraPreview();
                         retryButton.setVisibility(View.INVISIBLE);
                         acceptButton.setVisibility(View.INVISIBLE);
@@ -155,6 +158,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     public void onClick(View v)
                     {
+
                         createCameraPreview();
                         retryButton.setVisibility(View.INVISIBLE);
                         acceptButton.setVisibility(View.INVISIBLE);
@@ -165,6 +169,38 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+//
+//    public void removeLastImage(){
+//        File folder = new File("/project26");
+//        File[] listOfFiles = folder.listFiles();
+//
+//        for (int i = 0; i < listOfFiles.length; i++) {
+//            if (listOfFiles[i].isFile()) {
+//                System.out.println("File " + listOfFiles[i].getName());
+//            } else if (listOfFiles[i].isDirectory()) {
+//                System.out.println("Directory " + listOfFiles[i].getName());
+//            }
+//        }
+//
+//    }
+
+    public static File lastFileModified(String dir) {
+        File fl = new File(dir);
+        File[] files = fl.listFiles(new FileFilter() {
+            public boolean accept(File file) {
+                return file.isFile();
+            }
+        });
+        long lastMod = Long.MIN_VALUE;
+        File choice = null;
+        for (File file : files) {
+            if (file.lastModified() > lastMod) {
+                choice = file;
+                lastMod = file.lastModified();
+            }
+        }
+        return choice;
     }
 
     @Override
