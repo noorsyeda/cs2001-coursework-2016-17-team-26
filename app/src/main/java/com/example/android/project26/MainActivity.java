@@ -144,6 +144,7 @@ public class MainActivity extends AppCompatActivity {
                     {
                         File folder = new File(Environment.getExternalStorageDirectory() + "");
                         lastFileModified(folder+ "/project26").delete();
+                        Toast.makeText(MainActivity.this, "Removed", Toast.LENGTH_SHORT).show();
                         createCameraPreview();
                         retryButton.setVisibility(View.INVISIBLE);
                         acceptButton.setVisibility(View.INVISIBLE);
@@ -308,7 +309,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onCaptureCompleted(CameraCaptureSession session, CaptureRequest request, TotalCaptureResult result) {
                     super.onCaptureCompleted(session, request, result);
-                    Toast.makeText(MainActivity.this, "Saved:" + file, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Saved", Toast.LENGTH_SHORT).show();
 //                    createCameraPreview();
                 }
             };

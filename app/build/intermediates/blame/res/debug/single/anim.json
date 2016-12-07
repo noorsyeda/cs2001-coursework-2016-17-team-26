@@ -12,12 +12,12 @@
         "source": "/Users/home/Projects/android/Project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/anim/abc_slide_out_bottom.xml"
     },
     {
-        "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
-        "source": "/Users/home/Projects/android/Project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/anim/abc_popup_exit.xml"
-    },
-    {
         "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
         "source": "/Users/home/Projects/android/Project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/home/Projects/android/Project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/anim/abc_popup_exit.xml"
     },
     {
         "merged": "/Users/home/Projects/android/Project26/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
