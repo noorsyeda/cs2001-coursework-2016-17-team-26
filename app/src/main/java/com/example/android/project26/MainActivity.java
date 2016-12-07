@@ -4,6 +4,7 @@ import android.Manifest;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.ImageFormat;
@@ -27,6 +28,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.format.DateFormat;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.Size;
 import android.util.SparseIntArray;
@@ -37,6 +39,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 import java.io.File;
+import java.io.FileFilter;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -60,12 +63,15 @@ public class MainActivity extends AppCompatActivity {
 
     protected CameraDevice cameraDevice;
     protected CameraCaptureSession cameraCaptureSessions;
-    protected CaptureRequest captureRequest;
     protected CaptureRequest.Builder captureRequestBuilder;
     private Button takePictureButton;
+    private Button retryButton;
+    private Button acceptButton;
     private TextureView textureView;
     private String cameraId;
     private Size imageDimension;
+
+
     TextureView.SurfaceTextureListener textureListener = new TextureView.SurfaceTextureListener() {
         @Override
         public void onSurfaceTextureAvailable(SurfaceTexture surface, int width, int height) {
@@ -114,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         textureView = (TextureView) findViewById(R.id.texture);
         assert textureView != null;
         textureView.setSurfaceTextureListener(textureListener);
@@ -128,39 +134,73 @@ public class MainActivity extends AppCompatActivity {
                 takePictureButton.setVisibility(View.INVISIBLE);
 
 
-                final Button retryButton = (Button) findViewById(R.id.btn_retry);
-                final Button tickButton = (Button) findViewById(R.id.btn_tick);
+                retryButton = (Button) findViewById(R.id.btn_retry);
+                acceptButton = (Button) findViewById(R.id.btn_analyze);
                 retryButton.setVisibility(View.VISIBLE);
+                acceptButton.setVisibility(View.INVISIBLE);
                 retryButton.setOnClickListener(new Button.OnClickListener()
                 {
                     public void onClick(View v)
                     {
+                        File folder = new File(Environment.getExternalStorageDirectory() + "");
+                        lastFileModified(folder+ "/project26").delete();
                         createCameraPreview();
-                        tickButton.setVisibility(View.INVISIBLE);
                         retryButton.setVisibility(View.INVISIBLE);
+                        acceptButton.setVisibility(View.INVISIBLE);
                         takePictureButton.setVisibility(View.VISIBLE);
+
                     }
                 });
-                    retryButton.setVisibility(View.VISIBLE); //SHOW the button
+                retryButton.setVisibility(View.VISIBLE); //SHOW the button
 
 
-                tickButton.setVisibility(View.VISIBLE);
-                tickButton.setOnClickListener(new Button.OnClickListener()
+                acceptButton.setOnClickListener(new Button.OnClickListener()
                 {
                     public void onClick(View v)
                     {
+
                         createCameraPreview();
-                        tickButton.setVisibility(View.INVISIBLE);
                         retryButton.setVisibility(View.INVISIBLE);
+                        acceptButton.setVisibility(View.INVISIBLE);
                         takePictureButton.setVisibility(View.VISIBLE);
                     }
                 });
-                tickButton.setVisibility(View.VISIBLE); //SHOW the button
+                acceptButton.setVisibility(View.VISIBLE); //SHOW the button
             }
         });
 
+    }
+//
+//    public void removeLastImage(){
+//        File folder = new File("/project26");
+//        File[] listOfFiles = folder.listFiles();
+//
+//        for (int i = 0; i < listOfFiles.length; i++) {
+//            if (listOfFiles[i].isFile()) {
+//                System.out.println("File " + listOfFiles[i].getName());
+//            } else if (listOfFiles[i].isDirectory()) {
+//                System.out.println("Directory " + listOfFiles[i].getName());
+//            }
+//        }
+//
+//    }
 
-
+    public static File lastFileModified(String dir) {
+        File fl = new File(dir);
+        File[] files = fl.listFiles(new FileFilter() {
+            public boolean accept(File file) {
+                return file.isFile();
+            }
+        });
+        long lastMod = Long.MIN_VALUE;
+        File choice = null;
+        for (File file : files) {
+            if (file.lastModified() > lastMod) {
+                choice = file;
+                lastMod = file.lastModified();
+            }
+        }
+        return choice;
     }
 
     @Override
@@ -250,7 +290,6 @@ public class MainActivity extends AppCompatActivity {
 //                        MainActivity.this.startActivity(displayPicture);
                     }
                 }
-
                 private void save(byte[] bytes) throws IOException {
                     OutputStream output = null;
                     try {
@@ -295,7 +334,12 @@ public class MainActivity extends AppCompatActivity {
         try {
             SurfaceTexture texture = textureView.getSurfaceTexture();
             assert texture != null;
-            texture.setDefaultBufferSize(imageDimension.getWidth(), imageDimension.getHeight());
+            DisplayMetrics displaymetrics = new DisplayMetrics();
+            getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
+            int height = displaymetrics.heightPixels;
+            int width = displaymetrics.widthPixels;
+            texture.setDefaultBufferSize(height, width);
+
             Surface surface = new Surface(texture);
             captureRequestBuilder = cameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_PREVIEW);
             captureRequestBuilder.addTarget(surface);
@@ -372,6 +416,7 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     protected void onResume() {
+        takePictureButton.setVisibility(View.VISIBLE);
         super.onResume();
         Log.e(TAG, "onResume");
         startBackgroundThread();
@@ -383,6 +428,8 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     protected void onPause() {
+        retryButton.setVisibility(View.INVISIBLE);
+        acceptButton.setVisibility(View.INVISIBLE);
         Log.e(TAG, "onPause");
         stopBackgroundThread();
         super.onPause();
