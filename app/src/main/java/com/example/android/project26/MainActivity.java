@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
     private TextureView textureView;
     private String cameraId;
     private Size imageDimension;
+    private int noor = 0;
 
 
     TextureView.SurfaceTextureListener textureListener = new TextureView.SurfaceTextureListener() {
