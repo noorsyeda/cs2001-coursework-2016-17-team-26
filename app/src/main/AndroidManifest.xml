@@ -24,6 +24,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".PictureOutput"/>
+         <activity android:name=".contactus"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity android:name=".about_us"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity android:name=".setting_us"
+            android:label="@string/app_name">
+
+        </activity>
     </application>
 
 </manifest>
