@@ -31,6 +31,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#9a151414"
+        app:tabTextColor="@color/textColorPrimary"
+        app:tabSelectedTextColor="@color/textColorPrimary"
         app:tabMode="fixed"
         app:tabGravity="fill"/>
 </RelativeLayout>
