@@ -445,8 +445,10 @@ public class CameraActivity extends Fragment {
     }
     @Override
     public void onPause() {
-        retryButton.setVisibility(View.INVISIBLE);
-        acceptButton.setVisibility(View.INVISIBLE);
+        if((retryButton) != null){
+            retryButton.setVisibility(View.INVISIBLE);
+            acceptButton.setVisibility(View.INVISIBLE);
+        }
         Log.e(TAG, "onPause");
         stopBackgroundThread();
         super.onPause();
