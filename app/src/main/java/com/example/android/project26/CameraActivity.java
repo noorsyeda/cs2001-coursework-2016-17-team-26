@@ -3,7 +3,6 @@ package com.example.android.project26;
 import android.Manifest;
 
 import android.app.Activity;
-import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -53,9 +52,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import android.support.v4.app.Fragment;
+
 public class CameraActivity extends Fragment {
-    public CameraActivity() {
-        // Required empty public constructor
+    public CameraActivity(){
+
     }
     public static final int REQUEST_CAMERA_PERMISSION = 200;
     public static final int CAMERA_REQUEST = 1888;
@@ -78,6 +79,7 @@ public class CameraActivity extends Fragment {
     private String cameraId;
     private Size imageDimension;
     private int noor = 0;
+    public View rootView;
 
 
     TextureView.SurfaceTextureListener textureListener = new TextureView.SurfaceTextureListener() {
@@ -129,18 +131,19 @@ public class CameraActivity extends Fragment {
         super.onCreate(savedInstanceState);
 
 
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        getActivity().setContentView(R.layout.activity_camera);
+        rootView = inflater.inflate(R.layout.activity_camera, container, false);
 
-        final View rootView = inflater.inflate(R.layout.activity_camera, container, false);
         textureView = (TextureView) rootView.findViewById(R.id.texture);
+        assert textureView != null;
         textureView.setSurfaceTextureListener(textureListener);
-
-        takePictureButton = (Button) view.findViewById(R.id.btn_takepicture);
+        takePictureButton = (Button) rootView.findViewById(R.id.btn_takepicture);
         assert takePictureButton != null;
         takePictureButton.setOnClickListener(new View.OnClickListener()
         {
@@ -150,8 +153,8 @@ public class CameraActivity extends Fragment {
                 takePictureButton.setVisibility(View.INVISIBLE);
 
 
-                retryButton = (Button) view.findViewById(R.id.btn_retry);
-                acceptButton = (Button) view.findViewById(R.id.btn_analyze);
+                retryButton = (Button) rootView.findViewById(R.id.btn_retry);
+                acceptButton = (Button) rootView.findViewById(R.id.btn_analyze);
                 retryButton.setVisibility(View.VISIBLE);
                 acceptButton.setVisibility(View.INVISIBLE);
                 retryButton.setOnClickListener(new Button.OnClickListener()
@@ -184,8 +187,8 @@ public class CameraActivity extends Fragment {
                 acceptButton.setVisibility(View.VISIBLE); //SHOW the button
             }
         });
+        return rootView;
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.activity_camera, container, false);
     }
 //
 //    public void removeLastImage(){
@@ -386,7 +389,6 @@ public class CameraActivity extends Fragment {
             CameraCharacteristics characteristics = manager.getCameraCharacteristics(cameraId);
             StreamConfigurationMap map = characteristics.get(CameraCharacteristics.SCALER_STREAM_CONFIGURATION_MAP);
             assert map != null;
-
             imageDimension = map.getOutputSizes(SurfaceTexture.class)[0];
             // Add permission for camera and let user grant the permission
             if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
