@@ -172,6 +172,49 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.main_menu,menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.contact_us_id:
+                contact();
+                return true;
+            case R.id.about_us_id:
+                about();
+                return true;
+            case R.id.settings_id:
+                setting();
+                return true;
+
+
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+    public void contact()
+    {
+        Intent intent = new Intent(MainActivity.this, contactus.class);
+        startActivity(intent);
+    }
+    public void about()
+    {
+        Intent intent = new Intent(MainActivity.this, about_us.class);
+        startActivity(intent);
+    }
+    public void setting()
+    {
+        Intent intent = new Intent(MainActivity.this, setting_us.class);
+        startActivity(intent);
+    }
 //
 //    public void removeLastImage(){
 //        File folder = new File("/project26");
