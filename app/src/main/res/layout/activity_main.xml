@@ -29,6 +29,7 @@
         android:id="@+id/tabs"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
+         //android:textstyle="bold"
         android:layout_height="wrap_content"
         android:background="#9a151414"
         app:tabTextColor="@color/textColorPrimary"
