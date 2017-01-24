@@ -34,6 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
+          //this is revision
         sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
         <dex dex="/Users/home/Projects/group project github/group26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_d7ec492612ffe33cc4d0ca9088fcfc5ff76743a6/classes.dex" />
     </item>
