@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/home/Projects/android/Project26/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+        "outputFile": "/Users/home/Projects/group project github/group26/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,13 +11,13 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/Users/home/Projects/android/Project26/app/src/main/res/values-w820dp/dimens.xml",
+                    "file": "/Users/home/Projects/group project github/group26/app/src/main/res/values-w820dp/dimens.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 291,
+                        "startOffset": 330,
                         "endColumn": 57,
-                        "endOffset": 344
+                        "endOffset": 383
                     }
                 }
             }
