@@ -182,3 +182,11 @@ This is the class diagram for the application
 <img width="361" alt="class diagram for app" src="https://cloud.githubusercontent.com/assets/19575389/22272082/0baec390-e290-11e6-9095-a406f59127fe.PNG">
 
 
+
+
+Flowchart diagram:
+
+Added the flowchart diagram for our working model:
+
+<img width="470" alt="flowchart" src="https://cloud.githubusercontent.com/assets/19575389/22351090/47ffcba8-e40e-11e6-9b30-03b094ac7b11.PNG">
+
