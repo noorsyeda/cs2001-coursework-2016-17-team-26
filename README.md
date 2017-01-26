@@ -160,8 +160,14 @@ public class Second extends AppCompatActivity {
 
 
   Diagram for applications
+  
+  
+  
+  
+ Here are the all the picture and flow diagrams of our project :
 
-Here are the all the picture and flow diagrams of our project :
+
+
 
 Dataflow Diagram:
 
@@ -170,9 +176,18 @@ Dataflow Diagram:
 <img width="455" alt="dataflow part 2" src="https://cloud.githubusercontent.com/assets/19575389/22185300/f32d8c0e-e0da-11e6-9b07-00771031f1e1.PNG">
 
 
+
+
+
+
+
 Sequence working Diagram:
 
 [Image recognition  Sequence (UML) diagram.pdf](https://github.com/Chalikov/group26/files/722203/Image.recognition.Sequence.UML.diagram.pdf)
+
+
+
+
 
 
 
@@ -184,9 +199,19 @@ This is the class diagram for the application
 
 
 
+
+
+
+
 Flowchart diagram:
 
 Added the flowchart diagram for our working model:
 
 <img width="470" alt="flowchart" src="https://cloud.githubusercontent.com/assets/19575389/22351090/47ffcba8-e40e-11e6-9b30-03b094ac7b11.PNG">
+
+
+
+
+
+..
 
