@@ -12,7 +12,7 @@ public class setting_us extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.setting_us);
+        setContentView(R.layout.help_us);
         //getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
