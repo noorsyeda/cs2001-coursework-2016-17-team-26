@@ -2,6 +2,7 @@
 <resources>
     <color name="colorPrimary">#ad000000</color>
     <color name="colorPrimaryDark">#FF0000</color>
+    <color name="buttonColor">#bc000000</color>
     <color name="textColorPrimary">#FFFFFF</color>
     <color name="windowBackground">#FFFFFF</color>
     <color name="navigationBarColor">#000000</color>

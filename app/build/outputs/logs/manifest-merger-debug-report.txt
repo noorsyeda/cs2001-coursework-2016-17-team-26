@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/home/Projects/group project github/group26/app/src/main/AndroidManifest.xml:2:1-41:12
+ADDED from /Users/home/Projects/group project github/group26/app/src/main/AndroidManifest.xml:2:1-42:12
 	package
 		ADDED from /Users/home/Projects/group project github/group26/app/src/main/AndroidManifest.xml:3:5-44
 		INJECTED from /Users/home/Projects/group project github/group26/app/src/main/AndroidManifest.xml
@@ -30,7 +30,7 @@ ADDED from /Users/home/Projects/group project github/group26/app/src/main/Androi
 	android:name
 		ADDED from /Users/home/Projects/group project github/group26/app/src/main/AndroidManifest.xml:9:19-63
 application
-ADDED from /Users/home/Projects/group project github/group26/app/src/main/AndroidManifest.xml:12:5-38:19
+ADDED from /Users/home/Projects/group project github/group26/app/src/main/AndroidManifest.xml:12:5-39:19
 MERGED from [com.android.support:design:25.0.1] /Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.1] /Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.1] /Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/AndroidManifest.xml:25:5-20
