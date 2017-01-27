@@ -180,16 +180,16 @@
         "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
-        "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/notification_bg.xml"
+        "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/notification_tile_bg.xml"
     },
     {
         "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
         "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_btn_borderless_material.xml"
     },
     {
-        "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
-        "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/notification_tile_bg.xml"
+        "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/notification_bg.xml"
     },
     {
         "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
