@@ -1,10 +1,6 @@
 [
     {
-        "merged": "C:\\Users\\noors\\Documents\\2nd Year\\CS2001\\group26\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\noors\\Documents\\2nd Year\\CS2001\\group26\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\home\\Projects\\android\\Project26\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\home\\Projects\\android\\Project26\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/Users/home/Projects/group project github/group26/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     }
 ]

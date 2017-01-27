@@ -1,4 +1,7 @@
-#Fri Dec 09 12:56:05 GMT 2016
-base.0=C\:\\Users\\noors\\Documents\\2nd Year\\CS2001\\group26\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Fri Jan 27 15:35:24 GMT 2017
+base.0=/Users/home/Projects/group project github/group26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d1c19ac216238ebda187ce0e5cec6b7f7b7c5cea
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=C\:\\Users\\noors\\Documents\\2nd Year\\CS2001\\group26\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.1=/Users/home/Projects/group project github/group26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ce10bce82ee8bb082a26537eb0c23e8eba681e86/classes.dex
+base.1=/Users/home/Projects/group project github/group26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ce10bce82ee8bb082a26537eb0c23e8eba681e86
+file.0=/Users/home/Projects/group project github/group26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d1c19ac216238ebda187ce0e5cec6b7f7b7c5cea/classes.dex
