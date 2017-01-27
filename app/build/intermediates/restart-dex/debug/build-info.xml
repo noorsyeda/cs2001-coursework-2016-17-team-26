@@ -5,26 +5,21 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="505572701328486"
-    token="-6688784619160927455"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="505897229938626"
+    token="-6688784619160927455" >
 
     <task
         name="javac"
-        duration="1478" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="555" />
+        duration="0" />
     <task
         name="verifier"
-        duration="522" />
-
-    <artifact
-        location="C:\Users\dawoo\AndroidStudioProjects\GROUP26.DAWOOD\Group26--DAWOOOOD\group26\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        duration="0" />
 
     <build
         timestamp="505572701328486"
@@ -33,5 +28,6 @@
             location="C:\Users\dawoo\AndroidStudioProjects\GROUP26.DAWOOD\Group26--DAWOOOOD\group26\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
+    <build timestamp="505897229938626" />
 
 </instant-run>
