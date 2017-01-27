@@ -56,6 +56,10 @@
         "source": "C:\\Users\\dawoo\\AndroidStudioProjects\\GROUP26.DAWOOD\\Group26--DAWOOOOD\\group26\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
+        "merged": "C:\\Users\\dawoo\\AndroidStudioProjects\\GROUP26.DAWOOD\\Group26--DAWOOOOD\\group26\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pop.jpg",
+        "source": "C:\\Users\\dawoo\\AndroidStudioProjects\\GROUP26.DAWOOD\\Group26--DAWOOOOD\\group26\\app\\src\\main\\res\\drawable\\pop.jpg"
+    },
+    {
         "merged": "C:\\Users\\dawoo\\AndroidStudioProjects\\GROUP26.DAWOOD\\Group26--DAWOOOOD\\group26\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
         "source": "C:\\Users\\dawoo\\AndroidStudioProjects\\GROUP26.DAWOOD\\Group26--DAWOOOOD\\group26\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\drawable\\notification_bg_low.xml"
     },
