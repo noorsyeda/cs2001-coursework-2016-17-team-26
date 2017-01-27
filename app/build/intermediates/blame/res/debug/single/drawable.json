@@ -32,12 +32,12 @@
         "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
         "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
         "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
@@ -78,6 +78,10 @@
     {
         "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
         "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/drawable/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/kk.jpg",
+        "source": "/Users/home/Projects/group project github/group26/app/src/main/res/drawable/kk.jpg"
     },
     {
         "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
@@ -180,16 +184,16 @@
         "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
-        "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/notification_tile_bg.xml"
+        "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/notification_bg.xml"
     },
     {
         "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
         "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_btn_borderless_material.xml"
     },
     {
-        "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
-        "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/notification_bg.xml"
+        "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/notification_tile_bg.xml"
     },
     {
         "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",

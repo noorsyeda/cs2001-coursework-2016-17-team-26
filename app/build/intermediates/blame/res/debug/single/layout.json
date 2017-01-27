@@ -24,12 +24,12 @@
         "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/layout/design_navigation_menu_item.xml"
     },
     {
-        "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
-        "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/layout/design_layout_tab_text.xml"
-    },
-    {
         "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
         "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/Users/home/Projects/group project github/group26/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/layout/design_layout_tab_text.xml"
     },
     {
         "merged": "/Users/home/Projects/group project github/group26/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",

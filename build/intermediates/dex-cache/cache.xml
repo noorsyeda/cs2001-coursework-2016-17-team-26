@@ -124,7 +124,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="c39e58855f6d35c5b2930ad64fd9217cdceb79b9">
+        sha1="96191e399e2b30ca2b273a3236a501f2d9c35331">
         <dex dex="/Users/home/Projects/group project github/group26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ce10bce82ee8bb082a26537eb0c23e8eba681e86/classes.dex" />
     </item>
     <item
@@ -133,7 +133,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="965c8e8f25a298c617d3dafb9ad79fb2729bc203">
+        sha1="e6e2dff6ded70f7b42d86a357a6c2383cba2d3ae">
         <dex dex="/Users/home/Projects/group project github/group26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d1c19ac216238ebda187ce0e5cec6b7f7b7c5cea/classes.dex" />
     </item>
     <item

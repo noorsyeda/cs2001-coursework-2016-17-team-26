@@ -1,12 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
     android:layout_height="match_parent">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hi Dawood" />
+    <ImageView
 
-</LinearLayout>
+        android:src="@drawable/kk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop = "20dp"
+
+
+        />
+
+
+
+
+    <!-- Header aligned to top -->
+
+
+
+    <RelativeLayout
+
+        android:id="@+id/header"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+
+        android:background="#FC9"
+
+        android:gravity="center" >
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+
+            android:text="Group project 26"
+
+            android:textColor="#000"
+
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <!-- Footer aligned to bottom -->
+
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        android:background="#FC0"
+
+        android:gravity="center" >
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_margin="15dp"
+
+            android:text="Brunel University"
+
+            android:textColor="#000"
+
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+
+
+    <!-- Content below header and above footer -->
+
+
+
+    <RelativeLayout
+
+        android:id="@+id/content"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="fill_parent"
+
+        android:layout_above="@id/footer"
+
+        android:layout_below="@id/header"
+
+        android:gravity="center" >
+
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="This is the application created by  six Brunel University London students in  their Group project"
+
+            android:textColor="#33E"
+            android:textStyle="bold"
+
+
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
