@@ -1,3 +1,114 @@
+# Group Poject 26
+
+This is the application which is called a Image recognition Application . The main purpose of this application is that User take or choose the picture and then send to backend after it the system will tell accuracy of image.Basically This applcation will recognise he image on the Adroid Platform with closet to accuracy.
+
+
+##Deadlines
+
+| Name          | Date          |
+| ------------- |:-------------:| 
+| ~~Design Presentation~~     | ~~4 Nov 2016~~ | 
+|~~Mobile Prototype Demo~~   | ~~9 Dec 2016~~  |  
+| ~~Peer and Self Assessment~~ | ~~16 Dec 2016~~   | 
+| Beta System Demo     | 10 Feb 2017 | 
+| System Demo Video    | 24 Feb 2017 | 
+| Group Presentation Demo   | 16 March 2017 | 
+| Portfolio Assessment| 24 March 2016 | 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # group26
 
 At this point the master branch contains the starting stage of our android app
