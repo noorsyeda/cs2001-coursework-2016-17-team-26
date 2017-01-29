@@ -16,6 +16,15 @@ This is the application which is called a Image recognition Application . The ma
 | Portfolio Assessment| 24 March 2016 | 
 
 
+# Team
+
+Edward Wills <1400153@my.brunel.ac.uk>,
+Priyen Patel <1443142@my.brunel.ac.uk>,
+Noor Syeda <1505196@my.brunel.ac.uk>,
+Aleksandr Chalikov <1518223@my.brunel.ac.uk>,
+Muhammad Rossan <1413101@my.brunel.ac.uk>,
+Dawood Ahmed <1604976@my.brunel.ac.uk>
+
 
 
 
