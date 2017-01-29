@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="24"
-    density="xxhdpi"
+    abi="x86_64,x86"
+    api-level="25"
+    density="560dpi"
     format="8"
-    plugin-version="2.2.3"
-    timestamp="507636405389404"
-    token="-6688784619160927455"
-    verifier="COLD_SWAP_REQUESTED" >
+    plugin-version="2.2.2"
+    timestamp="17223925101385"
+    token="7599193842713744340"
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="922" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="546" />
     <task
         name="verifier"
-        duration="0" />
+        duration="35" />
+
+    <artifact
+        location="/Users/home/Projects/android/group26_term1git/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="507604489798602"
+        timestamp="17223925101385"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\dawoo\AndroidStudioProjects\GROUP26.DAWOOD\Group26--DAWOOOOD\group26\app\build\outputs\apk\app-debug.apk"
+            location="/Users/home/Projects/android/group26_term1git/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="507636405389404"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

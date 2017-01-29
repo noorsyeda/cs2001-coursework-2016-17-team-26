@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\dawoo\\AndroidStudioProjects\\GROUP26.DAWOOD\\Group26--DAWOOOOD\\group26\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "/Users/home/Projects/android/group26_term1git/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "C:\\Users\\dawoo\\AndroidStudioProjects\\GROUP26.DAWOOD\\Group26--DAWOOOOD\\group26\\app\\build\\intermediates\\exploded-aar\\com.android.support.test\\rules\\0.5\\res\\values\\values.xml",
+                    "file": "/Users/home/Projects/android/group26_term1git/app/build/intermediates/exploded-aar/com.android.support.test/rules/0.5/res/values/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
