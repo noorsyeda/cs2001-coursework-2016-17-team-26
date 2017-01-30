@@ -4,34 +4,33 @@
     api-level="25"
     density="560dpi"
     format="8"
-    plugin-version="2.2.2"
-    timestamp="17223925101385"
-    token="7599193842713744340"
-    verifier="FULL_BUILD_REQUESTED" >
+    plugin-version="2.2.3"
+    timestamp="34725479469379"
+    token="-7480489051487782891"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="922" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="546" />
+        duration="0" />
     <task
         name="verifier"
-        duration="35" />
-
-    <artifact
-        location="/Users/home/Projects/android/group26_term1git/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        duration="0" />
 
     <build
-        timestamp="17223925101385"
+        timestamp="34569231461091"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/home/Projects/android/group26_term1git/app/build/outputs/apk/app-debug.apk"
+            location="/Users/home/Projects/android/CS2001_project26/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
+    <build
+        timestamp="34725479469379"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

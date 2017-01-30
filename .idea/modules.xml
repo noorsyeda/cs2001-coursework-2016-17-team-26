@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CS2001_project26.iml" filepath="$PROJECT_DIR$/CS2001_project26.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/group26.iml" filepath="$PROJECT_DIR$/group26.iml" />
       <module fileurl="file://$PROJECT_DIR$/group26_term1git.iml" filepath="$PROJECT_DIR$/group26_term1git.iml" />
