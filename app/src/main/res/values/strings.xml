@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Project26</string>
     <string name="take_picture">Take Picture</string>
+    <string name="btnUploadToServer">Upload to Server</string>
 </resources>

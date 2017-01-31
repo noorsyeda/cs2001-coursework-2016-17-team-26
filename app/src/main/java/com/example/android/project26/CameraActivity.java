@@ -5,7 +5,6 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.ImageFormat;
@@ -104,6 +103,7 @@ public class CameraActivity extends Fragment {
     private File file;
     private boolean mFlashSupported;
     private Handler mBackgroundHandler;
+    private Handler mHandler = new Handler();
     private final CameraDevice.StateCallback stateCallback = new CameraDevice.StateCallback() {
         @Override
         public void onOpened(CameraDevice camera) {
@@ -129,10 +129,6 @@ public class CameraActivity extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
-
     }
 
     @Override
@@ -152,7 +148,6 @@ public class CameraActivity extends Fragment {
                 takePicture();
                 takePictureButton.setVisibility(View.INVISIBLE);
 
-
                 retryButton = (Button) rootView.findViewById(R.id.btn_retry);
                 acceptButton = (Button) rootView.findViewById(R.id.btn_analyze);
                 retryButton.setVisibility(View.VISIBLE);
@@ -161,13 +156,18 @@ public class CameraActivity extends Fragment {
                 {
                     public void onClick(View v)
                     {
+                        try {
+                            Thread.sleep(1500);
+
                         File folder = new File(Environment.getExternalStorageDirectory() + "");
                         lastFileModified(folder+ "/project26").delete();
                         createCameraPreview();
                         retryButton.setVisibility(View.INVISIBLE);
                         acceptButton.setVisibility(View.INVISIBLE);
                         takePictureButton.setVisibility(View.VISIBLE);
-
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     }
                 });
                 retryButton.setVisibility(View.VISIBLE); //SHOW the button
@@ -177,11 +177,12 @@ public class CameraActivity extends Fragment {
                 {
                     public void onClick(View v)
                     {
-
-                        createCameraPreview();
+                        final Context context = getActivity();
+                        Intent intent = new Intent(context, DisplayPicture.class);
+                        startActivity(intent);
                         retryButton.setVisibility(View.INVISIBLE);
                         acceptButton.setVisibility(View.INVISIBLE);
-                        takePictureButton.setVisibility(View.VISIBLE);
+                        //takePictureButton.setVisibility(View.VISIBLE);
                     }
                 });
                 acceptButton.setVisibility(View.VISIBLE); //SHOW the button
@@ -205,23 +206,6 @@ public class CameraActivity extends Fragment {
 //
 //    }
 
-    public static File lastFileModified(String dir) {
-        File fl = new File(dir);
-        File[] files = fl.listFiles(new FileFilter() {
-            public boolean accept(File file) {
-                return file.isFile();
-            }
-        });
-        long lastMod = Long.MIN_VALUE;
-        File choice = null;
-        for (File file : files) {
-            if (file.lastModified() > lastMod) {
-                choice = file;
-                lastMod = file.lastModified();
-            }
-        }
-        return choice;
-    }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -322,6 +306,7 @@ public class CameraActivity extends Fragment {
                     }
                 }
             };
+
             reader.setOnImageAvailableListener(readerListener, mBackgroundHandler);
 
             final CameraCaptureSession.CaptureCallback captureListener = new CameraCaptureSession.CaptureCallback() {
@@ -348,6 +333,8 @@ public class CameraActivity extends Fragment {
             e.printStackTrace();
         }
     }
+
+
 
     protected void createCameraPreview() {
         try {
@@ -443,6 +430,25 @@ public class CameraActivity extends Fragment {
             textureView.setSurfaceTextureListener(textureListener);
         }
     }
+
+    public static File lastFileModified(String dir) {
+        File fl = new File(dir);
+        File[] files = fl.listFiles(new FileFilter() {
+            public boolean accept(File file) {
+                return file.isFile();
+            }
+        });
+        long lastMod = Long.MIN_VALUE;
+        File choice = null;
+        for (File file : files) {
+            if (file.lastModified() > lastMod) {
+                choice = file;
+                lastMod = file.lastModified();
+            }
+        }
+        return choice;
+    }
+
     @Override
     public void onPause() {
         if((retryButton) != null){

@@ -51,10 +51,4 @@
             android:visibility="invisible" />
 
     </FrameLayout>
-
-
-
-
-
-
 </LinearLayout>
