@@ -2,13 +2,25 @@ package com.example.android.project26;
 
 import android.app.Activity;
 import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
-
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileFilter;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.SocketTimeoutException;
+import java.net.URL;
 
 /**
  * Created by home on 31/01/2017.
@@ -17,6 +29,9 @@ import java.io.FileFilter;
 public class DisplayPicture extends Activity {
     private ImageView mImageView;
     private Handler mHandler = new Handler();
+    private Button btn_upload;
+    static final int BUFFER_SIZE = 4096;
+    private File image_file = new File(Environment.getExternalStorageDirectory() + "/project26");
 
     public void onCreate(Bundle savedInstanceState) {
 
@@ -25,9 +40,16 @@ public class DisplayPicture extends Activity {
 
 
         mImageView = (ImageView) findViewById(R.id.image_load);
-        File image = new File(Environment.getExternalStorageDirectory() + "/project26");
-        mImageView.setImageBitmap(BitmapFactory.decodeFile(String.valueOf(lastFileModified(String.valueOf(image)))));
 
+        mImageView.setImageBitmap(BitmapFactory.decodeFile(String.valueOf(lastFileModified(String.valueOf(image_file)))));
+
+        btn_upload = (Button) findViewById(R.id.btnUpload);
+        btn_upload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new sendFile().execute(new String[] { "http://134.83.83.25:47326/UploadServlet"});
+            }
+        });
     }
 
     public static File lastFileModified(String dir) {
@@ -46,5 +68,81 @@ public class DisplayPicture extends Activity {
             }
         }
         return choice;
+    }
+
+    private class sendFile extends AsyncTask<String, Void, String> {
+
+        @Override
+        protected String doInBackground(String... urls) {
+            HttpURLConnection httpConn = null;
+            try {
+                String file =  String.valueOf(lastFileModified(String.valueOf(image_file)));
+                File uploadFile = new File(file);
+                FileInputStream inputStream = new FileInputStream(uploadFile);
+
+                System.out.println("File to upload: " + file);
+
+                // creates a HTTP connection
+                URL url1 = new URL(urls[0]);
+                httpConn = (HttpURLConnection) url1.openConnection();
+                httpConn.setUseCaches(false);
+                httpConn.setDoOutput(true);
+                httpConn.setRequestMethod("POST");
+                httpConn.setRequestProperty("fileName", uploadFile.getName());
+                httpConn.connect();
+
+                // sets file name as a HTTP header
+                Log.i("fileName", uploadFile.getName());
+
+                // opens output stream of the HTTP connection for writing data
+                OutputStream outputStream = httpConn.getOutputStream();
+
+                // Opens input stream of the file for reading data
+                byte[] buffer = new byte[BUFFER_SIZE];
+                int bytesRead = -1;
+
+                System.out.println("Start writing data...");
+
+                while ((bytesRead = inputStream.read(buffer)) != -1) {
+                    outputStream.write(buffer, 0, bytesRead);
+                }
+                System.out.println("Data was written.");
+                outputStream.close();
+                inputStream.close();
+            } catch (SocketTimeoutException e) {
+                Log.e("Debug", "error: " + e.getMessage(), e);
+            } catch (MalformedURLException ex) {
+                Log.e("Debug", "error: " + ex.getMessage(), ex);
+            } catch (IOException ioe) {
+                Log.e("Debug", "error: " + ioe.getMessage(), ioe);
+            }
+
+            try {
+                // always check HTTP response code from server
+                int responseCode = httpConn.getResponseCode();
+                if (responseCode == HttpURLConnection.HTTP_OK) {
+                    // reads server's response
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(httpConn.getInputStream()));
+                    String response = reader.readLine();
+                    System.out.println("Server's response: " + response);
+                } else {
+                    System.out.println("Server returned non-OK code: " + responseCode);
+                }
+            } catch (IOException ioex) {
+                Log.e("Debug", "error: " + ioex.getMessage(), ioex);
+            }
+            return null;
+        }
+        @Override
+        protected void onPostExecute(String result) {
+        }
+
+        @Override
+        protected void onPreExecute() {
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values) {
+        }
     }
 }

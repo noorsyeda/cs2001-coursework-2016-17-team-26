@@ -1,7 +1,6 @@
 package com.example.android.project26;
 
 import android.Manifest;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -26,7 +25,7 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
 import android.text.format.DateFormat;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -39,7 +38,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
+
 import java.io.File;
 import java.io.FileFilter;
 import java.io.FileNotFoundException;
@@ -51,7 +50,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-import android.support.v4.app.Fragment;
 
 public class CameraActivity extends Fragment {
     public CameraActivity(){
@@ -268,7 +266,7 @@ public class CameraActivity extends Fragment {
             }
             Date date = new Date();
             CharSequence date_frm = DateFormat.format("MM-dd-yy_hh-mm-ss", date.getTime());
-            final File file = new File(folder + "/IMG "+date_frm +".jpg");
+            final File file = new File(folder + "/IMG"+date_frm +".jpg");
 
             ImageReader.OnImageAvailableListener readerListener = new ImageReader.OnImageAvailableListener()
             {
