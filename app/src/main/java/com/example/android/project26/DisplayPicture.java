@@ -141,9 +141,9 @@ public class DisplayPicture extends Activity {
         @Override
         protected void onPostExecute(String result) {
             if (result == null){
-                showToast("Update Successful");
+                showToast("Upload Successful");
             }else{
-                showToast("Update Unsuccessful");
+                showToast("Upload Unsuccessful");
             }
         }
 
