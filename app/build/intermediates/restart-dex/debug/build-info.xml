@@ -5,19 +5,19 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="103788923017585"
+    timestamp="142923839572957"
     token="-7480489051487782891"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="393" />
+        duration="288" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="14" />
+        duration="34" />
     <task
         name="verifier"
         duration="1" />
@@ -27,14 +27,14 @@
         type="DEX" />
 
     <build
-        timestamp="101831359772303"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="141410425809229"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/home/Projects/android/CS2001_project26/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="103788923017585"
+        timestamp="142923839572957"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"

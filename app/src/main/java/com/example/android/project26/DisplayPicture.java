@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileFilter;
@@ -71,7 +73,7 @@ public class DisplayPicture extends Activity {
     }
 
     private class sendFile extends AsyncTask<String, Void, String> {
-
+        public String success = "Success";
         @Override
         protected String doInBackground(String... urls) {
             HttpURLConnection httpConn = null;
@@ -125,24 +127,45 @@ public class DisplayPicture extends Activity {
                     BufferedReader reader = new BufferedReader(new InputStreamReader(httpConn.getInputStream()));
                     String response = reader.readLine();
                     System.out.println("Server's response: " + response);
-                } else {
+                    success = null;
+                }
+                else {
                     System.out.println("Server returned non-OK code: " + responseCode);
+                    success = "";
                 }
             } catch (IOException ioex) {
                 Log.e("Debug", "error: " + ioex.getMessage(), ioex);
             }
-            return null;
+            return success;
         }
         @Override
         protected void onPostExecute(String result) {
+            if (result == null){
+                showToast("Update Successful");
+            }else{
+                showToast("Update Unsuccessful");
+            }
         }
 
         @Override
         protected void onPreExecute() {
+            Toast.makeText(getApplicationContext(), "Uploading...",
+                    Toast.LENGTH_LONG).show();
         }
 
         @Override
         protected void onProgressUpdate(Void... values) {
+        }
+
+        private void showToast(final String text)
+        {
+            DisplayPicture.this.runOnUiThread(new Runnable()
+            {
+                public void run()
+                {
+                    Toast.makeText(DisplayPicture.this, text, Toast.LENGTH_LONG).show();
+                }
+            });
         }
     }
 }

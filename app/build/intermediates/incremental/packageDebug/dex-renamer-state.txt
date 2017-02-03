@@ -1,4 +1,4 @@
-#Wed Feb 01 16:57:08 GMT 2017
+#Fri Feb 03 09:08:58 GMT 2017
 base.0=/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bb67704f9844362d9e0fc93502ead4d348fc588f
 renamed.1=classes.dex
 renamed.0=classes2.dex

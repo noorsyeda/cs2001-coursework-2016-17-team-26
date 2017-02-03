@@ -12,24 +12,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_532a8dc513345e734b56812185542b556732fadb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_2dce09b8c7d39d35cba84a7f54f3196d5968e19b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/home/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
         jumboMode="true"
         optimize="true"
@@ -84,24 +66,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_fadfc7fb44a7dd5a72c63a5524cf2e050164c5c0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="e4dc067c8258f21c829d441726838edbd31494b4">
-        <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bb67704f9844362d9e0fc93502ead4d348fc588f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -117,15 +81,6 @@
         revision="24.0.3"
         sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
         <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_9c5f3a74721095f4e477b98fe4311dca6e3f6803/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/android/group26_term1git/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="/Users/home/Projects/android/group26_term1git/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_8f4fdf4380a296575521efc66f498198f67483ce/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -183,6 +138,105 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/home/Projects/android/group26_term1git/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/home/Projects/android/group26_term1git/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_757022727a71c96aacc36524da3f210025d538d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/home/Projects/android/group26_term1git/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/home/Projects/android/group26_term1git/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_12334324c16720cf1bad1b1904a23b7668ec7c00/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/home/Projects/android/group26_term1git/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/Users/home/Projects/android/group26_term1git/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.1_44c2f8e15c9d095ed111046d362c1665c7dbe903/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/home/Projects/android/group26_term1git/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/home/Projects/android/group26_term1git/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_5212c7bc78658f9830d788fd0329ee89c8560c51/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_bf912859fe409a9adcacc10968601712a4637073/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/home/Projects/android/group26_term1git/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/home/Projects/android/group26_term1git/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_edcb58b59dffd9da7be7ae46041afa1fa58023ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_532a8dc513345e734b56812185542b556732fadb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_2dce09b8c7d39d35cba84a7f54f3196d5968e19b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_fadfc7fb44a7dd5a72c63a5524cf2e050164c5c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7d687c93935abf5419974a533e04428f92c4e40b">
+        <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bb67704f9844362d9e0fc93502ead4d348fc588f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/home/Projects/android/group26_term1git/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/home/Projects/android/group26_term1git/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_8f4fdf4380a296575521efc66f498198f67483ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/home/Projects/android/group26_term1git/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -198,15 +252,6 @@
         revision="24.0.3"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="/Users/home/Projects/android/group26_term1git/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_96673f664328d6b78e1fe8f61bea943cbcb5c5e7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/android/group26_term1git/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="/Users/home/Projects/android/group26_term1git/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_757022727a71c96aacc36524da3f210025d538d8/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -264,39 +309,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/home/Projects/android/group26_term1git/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/Users/home/Projects/android/group26_term1git/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_12334324c16720cf1bad1b1904a23b7668ec7c00/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="efea507c638be680e2ce9a1fff770ff1d98ad9e2">
+        sha1="cd0c5968c51ff8c57ed4e814959f8f22db214a0d">
         <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0a1368522dcddb9eaa6e968b2e01f161f0f5a795/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/android/group26_term1git/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
-        <dex dex="/Users/home/Projects/android/group26_term1git/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.1_44c2f8e15c9d095ed111046d362c1665c7dbe903/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/android/group26_term1git/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/Users/home/Projects/android/group26_term1git/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_5212c7bc78658f9830d788fd0329ee89c8560c51/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -318,30 +336,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_bf912859fe409a9adcacc10968601712a4637073/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
         <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_64c22659493f591d902bb8e1b9fd9c5100d91373/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/home/Projects/android/group26_term1git/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="/Users/home/Projects/android/group26_term1git/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_edcb58b59dffd9da7be7ae46041afa1fa58023ee/classes.dex" />
     </item>
     <item
         is-multidex="true"
