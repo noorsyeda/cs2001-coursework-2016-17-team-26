@@ -2734,6 +2734,7 @@ containing a value of this type.
         public static final int notification_background=0x7f0c0095;
         public static final int notification_main_column=0x7f0c0090;
         public static final int notification_main_column_container=0x7f0c008f;
+        public static final int output=0x7f0c009f;
         public static final int parallax=0x7f0c002e;
         public static final int parentPanel=0x7f0c004b;
         public static final int pin=0x7f0c002f;
@@ -2795,7 +2796,6 @@ containing a value of this type.
         public static final int touch_outside=0x7f0c007d;
         public static final int transition_current_scene=0x7f0c0009;
         public static final int transition_scene_layoutid_cache=0x7f0c000a;
-        public static final int txtPercentage=0x7f0c009f;
         public static final int up=0x7f0c000b;
         public static final int useLogo=0x7f0c0016;
         public static final int view_offset_helper=0x7f0c000c;

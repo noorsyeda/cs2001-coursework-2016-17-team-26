@@ -6,10 +6,12 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
+import android.os.StrictMode;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -23,6 +25,10 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.SocketTimeoutException;
 import java.net.URL;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 /**
  * Created by home on 31/01/2017.
@@ -49,7 +55,7 @@ public class DisplayPicture extends Activity {
         btn_upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new sendFile().execute(new String[] { "http://134.83.83.25:47326/UploadServlet"});
+                new sendFile().execute(new String[] {"http://134.83.83.25:47326/Hello"});
             }
         });
     }
@@ -138,12 +144,33 @@ public class DisplayPicture extends Activity {
             }
             return success;
         }
+
         @Override
         protected void onPostExecute(String result) {
             if (result == null){
                 showToast("Upload Successful");
+
+                StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+                StrictMode.setThreadPolicy(policy);
+                try {
+                OkHttpClient client = new OkHttpClient();
+
+                Request request = new Request.Builder()
+                        .url("http://134.83.83.25:47326/Hello")
+                        .build();
+
+                Response response = null;
+
+                    response = client.newCall(request).execute();
+
+                TextView textElement = (TextView) findViewById(R.id.output);
+                    textElement.setVisibility(View.VISIBLE);
+                    textElement.setText(response.body().string());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }else{
-                showToast("Upload Unsuccessful");
+                showToast("Upload Failed");
             }
         }
 

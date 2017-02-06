@@ -20,12 +20,12 @@
         "source": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/res/merged/debug/drawable/kk.jpg",
-        "source": "/Users/home/Projects/android/CS2001_project26/app/src/main/res/drawable/kk.jpg"
-    },
-    {
         "merged": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
         "source": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/drawable/navigation_empty_icon.xml"
+    },
+    {
+        "merged": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/res/merged/debug/drawable/kk.jpg",
+        "source": "/Users/home/Projects/android/CS2001_project26/app/src/main/res/drawable/kk.jpg"
     },
     {
         "merged": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
@@ -72,16 +72,16 @@
         "source": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_seekbar_track_material.xml"
+        "merged": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
+        "source": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_dialog_material_background.xml"
     },
     {
         "merged": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
         "source": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_ic_clear_material.xml"
     },
     {
-        "merged": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
-        "source": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_dialog_material_background.xml"
+        "merged": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_seekbar_track_material.xml"
     },
     {
         "merged": "/Users/home/Projects/android/CS2001_project26/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",

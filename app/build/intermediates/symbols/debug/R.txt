@@ -783,6 +783,7 @@ int id normal 0x7f0c000e
 int id notification_background 0x7f0c0095
 int id notification_main_column 0x7f0c0090
 int id notification_main_column_container 0x7f0c008f
+int id output 0x7f0c009f
 int id parallax 0x7f0c002e
 int id parentPanel 0x7f0c004b
 int id pin 0x7f0c002f
@@ -844,7 +845,6 @@ int id topPanel 0x7f0c004c
 int id touch_outside 0x7f0c007d
 int id transition_current_scene 0x7f0c0009
 int id transition_scene_layoutid_cache 0x7f0c000a
-int id txtPercentage 0x7f0c009f
 int id up 0x7f0c000b
 int id useLogo 0x7f0c0016
 int id view_offset_helper 0x7f0c000c

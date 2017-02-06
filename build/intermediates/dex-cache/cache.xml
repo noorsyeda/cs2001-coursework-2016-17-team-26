@@ -210,6 +210,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/home/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.11.0/840897fcd7223a8143f1d9b6f69714e7be34fd50/okio-1.11.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.11.0_5683181240fb6aaf6ae29583c1efd77749c7eb7e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -223,7 +232,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="7d687c93935abf5419974a533e04428f92c4e40b">
+        sha1="14945698301863ea7855ad1702955a4be37ef4b8">
         <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bb67704f9844362d9e0fc93502ead4d348fc588f/classes.dex" />
     </item>
     <item
@@ -313,7 +322,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="cd0c5968c51ff8c57ed4e814959f8f22db214a0d">
+        sha1="67f2058ed9d0d8a3d79dbdf62bcefef0f612d453">
         <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0a1368522dcddb9eaa6e968b2e01f161f0f5a795/classes.dex" />
     </item>
     <item
@@ -342,6 +351,15 @@
         revision="24.0.3"
         sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
         <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_64c22659493f591d902bb8e1b9fd9c5100d91373/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/home/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Users/home/Projects/android/CS2001_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.6.0_ebe718d24fe6b679363f503f07937f3940ccf163/classes.dex" />
     </item>
     <item
         is-multidex="true"

@@ -18,14 +18,15 @@
     <!-- Videoview to preview recorded video -->
 
     <TextView
-        android:id="@+id/txtPercentage"
+        android:id="@+id/output"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="15dp"
         android:layout_marginTop="15dp"
         android:textColor="#FFFF"
-        android:textSize="30dp" />
+        android:textSize="10dp"
+        android:visibility="invisible"/>
 
     <ProgressBar
         android:id="@+id/progressBar"
