@@ -62,9 +62,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.about_us_id:
                 about();
                 return true;
-            case R.id.settings_id:
+            case R.id.settings_id:  // this method is for help us in the menu 
                 setting();
                 return true;
+                
 
 
 
