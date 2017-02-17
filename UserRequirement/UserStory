@@ -1,0 +1,22 @@
+Image recognition application
+
+A user story Is basically a high level definition of user’s requirement which have enough information so developers can estimate that how much effort will require in making that particular product for customer.
+According to Cohn (n.d.)  the typical template of user stories being “As a <user type>, I want <some goal> so that <some reason>”.
+
+These bullets points are some user stories of our application, please see the draft of user story below:
+
+•	“As a user, I want to take picture in simple way, I don’t want to be camera hidden in options
+
+•	“As a user, I also want to analyse the images from my gallery history”
+
+•	“As a user, I don’t want my login activity as this is not a social media application
+
+•	As user if I have problem regarding app I need to contact you also. 
+
+
+Reference:
+User stories: An agile introduction (no date) Available at: http://www.agilemodeling.com/artifacts/userStory.htm (Accessed: 27 October 2016).
+
+
+
+
