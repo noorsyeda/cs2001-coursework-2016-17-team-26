@@ -2,4 +2,14 @@
     <string name="app_name">Project26</string>
     <string name="take_picture">Take Picture</string>
     <string name="btnUploadToServer">Upload to Server</string>
+
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="title_slide1">Camera</string>
+    <string name="desc_slide1">You can take photo form camera which you want to analyze</string>
+    <string name="title_slide2">Process</string>
+    <string name="desc_slide2">The picture which is taken then go to backend for processing procedure </string>
+    <string name="title_slide3">Result</string>
+    <string name="desc_slide3">The output will show in closest percentages which is result of analyzed image</string>
 </resources>
