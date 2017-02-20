@@ -48,7 +48,6 @@ public class DisplayPicture extends Activity {
 
 
         mImageView = (ImageView) findViewById(R.id.image_load);
-
         mImageView.setImageBitmap(BitmapFactory.decodeFile(String.valueOf(lastFileModified(String.valueOf(image_file)))));
 
         btn_upload = (Button) findViewById(R.id.btnUpload);
@@ -124,7 +123,6 @@ public class DisplayPicture extends Activity {
             } catch (IOException ioe) {
                 Log.e("Debug", "error: " + ioe.getMessage(), ioe);
             }
-
             try {
                 // always check HTTP response code from server
                 int responseCode = httpConn.getResponseCode();
@@ -144,7 +142,6 @@ public class DisplayPicture extends Activity {
             }
             return success;
         }
-
         @Override
         protected void onPostExecute(String result) {
             if (result == null){
@@ -173,13 +170,11 @@ public class DisplayPicture extends Activity {
                 showToast("Upload Failed");
             }
         }
-
         @Override
         protected void onPreExecute() {
             Toast.makeText(getApplicationContext(), "Uploading...",
                     Toast.LENGTH_LONG).show();
         }
-
         @Override
         protected void onProgressUpdate(Void... values) {
         }
