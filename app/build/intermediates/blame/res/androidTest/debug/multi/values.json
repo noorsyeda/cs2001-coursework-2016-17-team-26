@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "outputFile": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support.test/rules/0.5/res/values/values.xml",
+                    "file": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\exploded-aar\\com.android.support.test\\rules\\0.5\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

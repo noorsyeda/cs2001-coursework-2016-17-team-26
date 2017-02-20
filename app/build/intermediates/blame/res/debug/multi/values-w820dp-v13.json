@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+        "outputFile": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,13 +11,13 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/Users/home/Projects/android/Brunel_repo_project26/app/src/main/res/values-w820dp/dimens.xml",
+                    "file": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 330,
+                        "startOffset": 335,
                         "endColumn": 57,
-                        "endOffset": 383
+                        "endOffset": 388
                     }
                 }
             }

@@ -19,6 +19,9 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
+    <color name="bg_screen1">#b12515</color>
+    <color name="bg_screen2">#FFBB00</color>
+    <color name="bg_screen3">#74a443</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -29,8 +32,11 @@
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="colorAccent">#c8e8ff</color>
+    <color name="colorAccent1">#FF4081</color>
     <color name="colorPrimary">#ad000000</color>
+    <color name="colorPrimary1">#3F51B5</color>
     <color name="colorPrimaryDark">#FF0000</color>
+    <color name="colorPrimaryDark1">#303F9F</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
@@ -46,6 +52,8 @@
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
+    <color name="dot_active">#000000</color>
+    <color name="dot_inactive">#cccccc</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
@@ -465,6 +473,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="custom_tab_layout_height">72dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_bottom_navigation_active_item_max_width">168dp</dimen>
     <dimen name="design_bottom_navigation_active_text_size">14sp</dimen>
@@ -505,6 +514,8 @@
     <dimen name="design_tab_text_size_2line">12sp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <dimen name="dots_bottom_margin">20dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
@@ -513,6 +524,8 @@
     <item format="float" name="hint_alpha_material_light" type="dimen">0.38</item>
     <item format="float" name="hint_pressed_alpha_material_dark" type="dimen">0.70</item>
     <item format="float" name="hint_pressed_alpha_material_light" type="dimen">0.54</item>
+    <dimen name="img_height">120dp</dimen>
+    <dimen name="img_width">120dp</dimen>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
@@ -531,6 +544,8 @@
     <dimen name="notification_subtext_size">13sp</dimen>
     <dimen name="notification_top_pad">10dp</dimen>
     <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="slide_desc">16sp</dimen>
+    <dimen name="slide_title">30sp</dimen>
     <dimen name="tab_label">14sp</dimen>
     <dimen name="tab_max_width">264dp</dimen>
     <dimen name="tab_padding_bottom">16dp</dimen>
@@ -592,9 +607,18 @@
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="btnUploadToServer">Upload to Server</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="desc_slide1">You can take photo form camera which you want to analyze</string>
+    <string name="desc_slide2">The picture which is taken then go to backend for processing procedure </string>
+    <string name="desc_slide3">The output will show in closest percentages which is result of analyzed image</string>
+    <string name="next">Next</string>
     <string name="search_menu_title">Search</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="take_picture">Take Picture</string>
+    <string name="title_slide1">Camera</string>
+    <string name="title_slide2">Process</string>
+    <string name="title_slide3">Result</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

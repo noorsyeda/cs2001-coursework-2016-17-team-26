@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+        "merged": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     }
 ]
