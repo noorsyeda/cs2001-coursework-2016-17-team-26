@@ -277,7 +277,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="60c567e1de363c757859284a8a18bf139e04a3f0">
+        sha1="6d728e53d7a1d72a111de44ae54b65590188256d">
         <dex dex="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_89002b5095c4db5a2e2ce7da815b8bf2acd90435/classes.dex" />
     </item>
     <item

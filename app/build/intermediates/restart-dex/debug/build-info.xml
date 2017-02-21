@@ -5,7 +5,7 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="162261842913244"
+    timestamp="181220287944642"
     token="-5316882854874524362"
     verifier="COMPATIBLE" >
 
@@ -14,7 +14,7 @@
         duration="0" />
     <task
         name="instant-run-dex"
-        duration="4" />
+        duration="0" />
     <task
         name="instant-run-transform"
         duration="0" />
@@ -23,29 +23,39 @@
         duration="0" />
 
     <artifact
-        location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
-        timestamp="161666241114054"
+        timestamp="172382028551608"
         verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/Users/home/Projects/android/Brunel_repo_project26/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="161785878420207"
+        timestamp="179984285541548"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="180620143066627"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
             type="DEX" />
     </build>
     <build
-        timestamp="162261842913244"
+        timestamp="181220287944642"
         verifier="COMPATIBLE" >
         <artifact
-            location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
+            location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

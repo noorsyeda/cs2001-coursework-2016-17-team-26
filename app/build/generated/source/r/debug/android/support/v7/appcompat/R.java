@@ -518,18 +518,18 @@ public final class R {
 		public static final int abc_textfield_search_default_mtrl_alpha = 0x7f020050;
 		public static final int abc_textfield_search_material = 0x7f020051;
 		public static final int abc_vector_test = 0x7f020052;
-		public static final int notification_action_background = 0x7f020061;
-		public static final int notification_bg = 0x7f020062;
-		public static final int notification_bg_low = 0x7f020063;
-		public static final int notification_bg_low_normal = 0x7f020064;
-		public static final int notification_bg_low_pressed = 0x7f020065;
-		public static final int notification_bg_normal = 0x7f020066;
-		public static final int notification_bg_normal_pressed = 0x7f020067;
-		public static final int notification_icon_background = 0x7f020068;
-		public static final int notification_template_icon_bg = 0x7f02006d;
-		public static final int notification_template_icon_low_bg = 0x7f02006e;
-		public static final int notification_tile_bg = 0x7f020069;
-		public static final int notify_panel_notification_icon_bg = 0x7f02006a;
+		public static final int notification_action_background = 0x7f020066;
+		public static final int notification_bg = 0x7f020067;
+		public static final int notification_bg_low = 0x7f020068;
+		public static final int notification_bg_low_normal = 0x7f020069;
+		public static final int notification_bg_low_pressed = 0x7f02006a;
+		public static final int notification_bg_normal = 0x7f02006b;
+		public static final int notification_bg_normal_pressed = 0x7f02006c;
+		public static final int notification_icon_background = 0x7f02006d;
+		public static final int notification_template_icon_bg = 0x7f020072;
+		public static final int notification_template_icon_low_bg = 0x7f020073;
+		public static final int notification_tile_bg = 0x7f02006e;
+		public static final int notify_panel_notification_icon_bg = 0x7f02006f;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f0d008d;
@@ -570,7 +570,7 @@ public final class R {
 		public static final int disableHome = 0x7f0d0010;
 		public static final int edit_query = 0x7f0d0062;
 		public static final int end = 0x7f0d0028;
-		public static final int end_padder = 0x7f0d009f;
+		public static final int end_padder = 0x7f0d00a0;
 		public static final int expand_activities_button = 0x7f0d0043;
 		public static final int expanded_menu = 0x7f0d0056;
 		public static final int home = 0x7f0d0004;
@@ -627,7 +627,7 @@ public final class R {
 		public static final int submenuarrow = 0x7f0d005a;
 		public static final int submit_area = 0x7f0d006b;
 		public static final int tabMode = 0x7f0d000f;
-		public static final int text = 0x7f0d0089;
+		public static final int text = 0x7f0d009f;
 		public static final int text2 = 0x7f0d009d;
 		public static final int textSpacerNoButtons = 0x7f0d0052;
 		public static final int time = 0x7f0d0095;

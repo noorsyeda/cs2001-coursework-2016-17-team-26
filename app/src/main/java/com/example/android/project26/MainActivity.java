@@ -1,7 +1,6 @@
 package com.example.android.project26;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
-        tabLayout.setSelectedTabIndicatorColor(Color.parseColor("#FF0000"));
+        tabLayout.setSelectedTabIndicatorColor(getColor(R.color.colorPrimaryDark));
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

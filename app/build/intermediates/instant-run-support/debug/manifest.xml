@@ -37,6 +37,14 @@
             android:label="Project26" >
         </activity>
         <activity
+            android:name="com.example.android.project26.BrowsePictureActivity"
+            android:label="Project26" >
+        </activity>
+        <activity
+            android:name="com.example.android.project26.DisplayPictureForGallery"
+            android:label="Project26" >
+        </activity>
+        <activity
             android:name="com.example.android.project26.contactus"
             android:label="@string/app_name" >
         </activity>
