@@ -15,7 +15,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/MyMaterialTheme">
+        android:theme="@style/MyMaterialTheme"
+        android:largeHeap="true">
 
         <activity
             android:name=".MainActivity">
@@ -30,6 +31,10 @@
 
         </activity>
         <activity android:name=".contactus"
+        android:label="@string/app_name">
+
+    </activity>
+        <activity android:name=".ImageDetails"
             android:label="@string/app_name">
 
         </activity>

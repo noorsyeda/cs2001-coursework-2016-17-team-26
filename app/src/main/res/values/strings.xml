@@ -2,4 +2,24 @@
     <string name="app_name">Project26</string>
     <string name="take_picture">Take Picture</string>
     <string name="btnUploadToServer">Upload to Server</string>
+    <string-array name="image_ids">
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_1</item>
+    </string-array>
 </resources>

@@ -164,6 +164,10 @@
         "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
+        "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/drawable/image_1.jpg",
+        "source": "/Users/home/Projects/android/Brunel_repo_project26/app/src/main/res/drawable/image_1.jpg"
+    },
+    {
         "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/drawable/camera_button.xml",
         "source": "/Users/home/Projects/android/Brunel_repo_project26/app/src/main/res/drawable/camera_button.xml"
     },

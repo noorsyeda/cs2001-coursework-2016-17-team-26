@@ -5,33 +5,47 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="148462677734432"
+    timestamp="162261842913244"
     token="-5316882854874524362"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="2407" />
-    <task
-        name="instant-run-dex"
         duration="0" />
     <task
+        name="instant-run-dex"
+        duration="4" />
+    <task
         name="instant-run-transform"
-        duration="758" />
+        duration="0" />
     <task
         name="verifier"
-        duration="14" />
+        duration="0" />
 
     <artifact
-        location="/Users/home/Projects/android/Brunel_repo_project26/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="148462677734432"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="161666241114054"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/Users/home/Projects/android/Brunel_repo_project26/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="161785878420207"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="162261842913244"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
