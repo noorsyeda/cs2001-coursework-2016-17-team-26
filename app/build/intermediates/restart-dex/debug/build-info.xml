@@ -5,9 +5,9 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="181220287944642"
+    timestamp="196665907949142"
     token="-5316882854874524362"
-    verifier="COMPATIBLE" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
@@ -22,40 +22,15 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-        type="RESOURCES" />
-
     <build
-        timestamp="172382028551608"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="196585650133420"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/home/Projects/android/Brunel_repo_project26/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="179984285541548"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="180620143066627"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="181220287944642"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-    </build>
+        timestamp="196665907949142"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
