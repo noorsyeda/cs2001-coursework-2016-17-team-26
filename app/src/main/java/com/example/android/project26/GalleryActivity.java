@@ -15,15 +15,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.GridView;
 
 import static android.app.Activity.RESULT_OK;
 
 
 public class GalleryActivity extends Fragment{
 
-    private GridView gridView;
-    private GridViewAdapter gridAdapter;
     private View rootView;
     private Button gallerySelect;
     public static final int SELECT_PICTURE = 1;
