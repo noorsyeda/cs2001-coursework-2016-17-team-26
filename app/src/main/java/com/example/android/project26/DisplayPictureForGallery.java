@@ -56,13 +56,13 @@ public class DisplayPictureForGallery extends Activity {
 
 
 
-        btn_upload = (Button) findViewById(R.id.btnUpload);
-        btn_upload.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+//        btn_upload = (Button) findViewById(R.id.btnUpload);
+//        btn_upload.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
                 new sendFile().execute(new String[] {"http://134.83.83.25:47326/Hello"});
-            }
-        });
+//            }
+//        });
     }
 
 

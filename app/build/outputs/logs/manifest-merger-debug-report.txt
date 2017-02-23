@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:2:1-58:12
+ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:2:1-54:12
 	package
 		ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:3:5-44
 		INJECTED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml
@@ -34,7 +34,7 @@ ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/Andro
 	android:name
 		ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:10:19-63
 application
-ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:13:5-55:19
+ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:13:5-51:19
 MERGED from [com.android.support:design:25.0.1] /Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:transition:25.0.1] /Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:25.0.1] /Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/AndroidManifest.xml:25:5-20
@@ -90,24 +90,18 @@ ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/Andro
 		ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:39:9-41
 	android:name
 		ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:38:19-44
-activity#com.example.android.project26.ImageDetails
+activity#com.example.android.project26.about_us
 ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:42:9-45:20
 	android:label
 		ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:43:13-45
 	android:name
-		ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:42:19-47
-activity#com.example.android.project26.about_us
+		ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:42:19-43
+activity#com.example.android.project26.setting_us
 ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:46:9-49:20
 	android:label
 		ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:47:13-45
 	android:name
-		ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:46:19-43
-activity#com.example.android.project26.setting_us
-ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:50:9-53:20
-	android:label
-		ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:51:13-45
-	android:name
-		ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:50:19-45
+		ADDED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml:46:19-45
 uses-sdk
 INJECTED from /Users/home/Projects/android/Brunel_repo_project26/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.0.1] /Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/AndroidManifest.xml:21:5-23:62

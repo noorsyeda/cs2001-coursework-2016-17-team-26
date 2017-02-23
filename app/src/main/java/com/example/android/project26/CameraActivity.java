@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.ImageFormat;
 import android.graphics.SurfaceTexture;
@@ -19,10 +20,12 @@ import android.hardware.camera2.TotalCaptureResult;
 import android.hardware.camera2.params.StreamConfigurationMap;
 import android.media.Image;
 import android.media.ImageReader;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
@@ -36,6 +39,7 @@ import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -52,14 +56,19 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
+import static android.app.Activity.RESULT_OK;
+
 public class CameraActivity extends Fragment {
-    public CameraActivity(){
+    public CameraActivity() {
 
     }
+
+    public static final int SELECT_PICTURE = 1;
     public static final int REQUEST_CAMERA_PERMISSION = 200;
     public static final int CAMERA_REQUEST = 1888;
     private static final String TAG = "AndroidCameraApi";
     private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
+
     static {
         ORIENTATIONS.append(Surface.ROTATION_0, 90);
         ORIENTATIONS.append(Surface.ROTATION_90, 0);
@@ -77,8 +86,9 @@ public class CameraActivity extends Fragment {
     private String cameraId;
     private Size imageDimension;
     private int noor = 0;
-    public View rootView;
     public ImageView imageView;
+    private View rootView;
+    private Button gallerySelect;
 
 
     TextureView.SurfaceTextureListener textureListener = new TextureView.SurfaceTextureListener() {
@@ -87,14 +97,17 @@ public class CameraActivity extends Fragment {
             //open your camera here
             openCamera();
         }
+
         @Override
         public void onSurfaceTextureSizeChanged(SurfaceTexture surface, int width, int height) {
             // Transform you image captured size according to the surface width and height
         }
+
         @Override
         public boolean onSurfaceTextureDestroyed(SurfaceTexture surface) {
             return false;
         }
+
         @Override
         public void onSurfaceTextureUpdated(SurfaceTexture surface) {
         }
@@ -112,10 +125,12 @@ public class CameraActivity extends Fragment {
             cameraDevice = camera;
             createCameraPreview();
         }
+
         @Override
         public void onDisconnected(CameraDevice camera) {
             cameraDevice.close();
         }
+
         @Override
         public void onError(CameraDevice camera, int error) {
             cameraDevice.close();
@@ -141,68 +156,61 @@ public class CameraActivity extends Fragment {
         textureView.setSurfaceTextureListener(textureListener);
         takePictureButton = (Button) rootView.findViewById(R.id.btn_takepicture);
         assert takePictureButton != null;
-        takePictureButton.setOnClickListener(new View.OnClickListener()
-        {
+        takePictureButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 takePictureButton.setVisibility(View.INVISIBLE);
-                IMGsaved imgsavedprogress = takePicture();
-                while(imgsavedprogress.doneSaving == false){
-                    try {
-                    Thread.sleep(100);
-                    } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                }
+                takePicture();
+                gallerySelect.setVisibility(View.INVISIBLE);
+                retryButton = (Button) rootView.findViewById(R.id.btn_retry);
+                acceptButton = (Button) rootView.findViewById(R.id.btn_analyze);
+                retryButton.setVisibility(View.VISIBLE);
+                acceptButton.setVisibility(View.INVISIBLE);
+                retryButton.setOnClickListener(new Button.OnClickListener()
+                {
+                    public void onClick(View v)
+                    {
+                        try {
+                            Thread.sleep(1000);
 
-//                try {
-//                    Thread.sleep(800);
-                    Intent displayPicture = new Intent (getActivity(),DisplayPicture.class);
-                    getActivity().startActivity(displayPicture);
-
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-
-//
-//                retryButton = (Button) rootView.findViewById(R.id.btn_retry);
-//                acceptButton = (Button) rootView.findViewById(R.id.btn_analyze);
-//                retryButton.setVisibility(View.VISIBLE);
-//                acceptButton.setVisibility(View.INVISIBLE);
-//                retryButton.setOnClickListener(new Button.OnClickListener()
-//                {
-//                    public void onClick(View v)
-//                    {
-//                        try {
-//                            Thread.sleep(1500);
-//
-//                        File folder = new File(Environment.getExternalStorageDirectory() + "");
-//                        lastFileModified(folder+ "/project26").delete();
-//                        createCameraPreview();
-//                        retryButton.setVisibility(View.INVISIBLE);
-//                        acceptButton.setVisibility(View.INVISIBLE);
-//                        takePictureButton.setVisibility(View.VISIBLE);
-//                        } catch (InterruptedException e) {
-//                            e.printStackTrace();
-//                        }
-//                    }
-//                });
-//                retryButton.setVisibility(View.VISIBLE); //SHOW the button
-//
-//
-//                acceptButton.setOnClickListener(new Button.OnClickListener()
-//                {
-//                    public void onClick(View v)
-//                    {
-//                        final Context context = getActivity();
-//                        Intent intent = new Intent(context, DisplayPicture.class);
-//                        startActivity(intent);
-//                        retryButton.setVisibility(View.INVISIBLE);
-//                        acceptButton.setVisibility(View.INVISIBLE);
-//                        //takePictureButton.setVisibility(View.VISIBLE);
-//                    }
-//                });
-//                acceptButton.setVisibility(View.VISIBLE); //SHOW the button
+                            File folder = new File(Environment.getExternalStorageDirectory() + "");
+                            lastFileModified(folder+ "/project26").delete();
+                            createCameraPreview();
+                            retryButton.setVisibility(View.INVISIBLE);
+                            takePictureButton.setVisibility(View.VISIBLE);
+                            gallerySelect.setVisibility(View.VISIBLE);
+                            acceptButton.setVisibility(View.INVISIBLE);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
+                //SHOW the button
+                acceptButton.setOnClickListener(new Button.OnClickListener()
+                {
+                    public void onClick(View v)
+                    {
+                        final Context context = getActivity();
+                        Intent intent = new Intent(context, DisplayPicture.class);
+                        startActivity(intent);
+                        retryButton.setVisibility(View.INVISIBLE);
+                        acceptButton.setVisibility(View.INVISIBLE);
+                        //takePictureButton.setVisibility(View.VISIBLE);
+                    }
+                });
+                acceptButton.setVisibility(View.VISIBLE); //SHOW the button
+            }
+        });
+        gallerySelect = (Button) rootView.findViewById(R.id.select_from_gallery);
+        gallerySelect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.image_click));
+                Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                intent.setType("image/*");
+//                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent,
+                        "Select Picture"), SELECT_PICTURE);
             }
         });
         return rootView;
@@ -231,6 +239,23 @@ public class CameraActivity extends Fragment {
             Bitmap imageBitmap = (Bitmap) extras.get("data");
             imageView.setImageBitmap(imageBitmap);
         }
+
+        if (requestCode == SELECT_PICTURE && resultCode == RESULT_OK && null != data) {
+            Uri selectedImage = data.getData();
+            String[] filePathColumn = {MediaStore.Images.Media.DATA};
+
+            Cursor cursor = getActivity().getContentResolver().query(selectedImage,
+                    filePathColumn, null, null, null);
+            cursor.moveToFirst();
+
+            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+            String picturePath = cursor.getString(columnIndex);
+            cursor.close();
+            Intent i = new Intent(getActivity(), DisplayPictureForGallery.class);
+            i.putExtra("key", picturePath);
+            startActivity(i);
+            // String picturePath contains the path of selected Image
+        }
     }
 
     protected void startBackgroundThread() {
@@ -238,6 +263,7 @@ public class CameraActivity extends Fragment {
         mBackgroundThread.start();
         mBackgroundHandler = new Handler(mBackgroundThread.getLooper());
     }
+
     protected void stopBackgroundThread() {
         mBackgroundThread.quitSafely();
         try {
@@ -249,10 +275,9 @@ public class CameraActivity extends Fragment {
         }
     }
 
-    protected IMGsaved takePicture() {
-        if(null == cameraDevice) {
+    protected void takePicture() {
+        if (null == cameraDevice) {
             Log.e(TAG, "cameraDevice is null");
-            return new IMGsaved();
         }
         CameraManager manager = (CameraManager) getActivity().getSystemService(Context.CAMERA_SERVICE);
         try {
@@ -285,12 +310,10 @@ public class CameraActivity extends Fragment {
             }
             Date date = new Date();
             CharSequence date_frm = DateFormat.format("MM-dd-yy_hh-mm-ss", date.getTime());
-            final File file = new File(folder + "/IMG"+date_frm +".jpg");
+            final File file = new File(folder + "/IMG" + date_frm + ".jpg");
 
-            final IMGsaved progress = new IMGsaved();
 
-            ImageReader.OnImageAvailableListener readerListener = new ImageReader.OnImageAvailableListener()
-            {
+            ImageReader.OnImageAvailableListener readerListener = new ImageReader.OnImageAvailableListener() {
                 @Override
                 public void onImageAvailable(ImageReader reader) {
                     Image image = null;
@@ -313,6 +336,7 @@ public class CameraActivity extends Fragment {
 //                        MainActivity.this.startActivity(displayPicture);
                     }
                 }
+
                 private void save(byte[] bytes) throws IOException {
                     OutputStream output = null;
                     try {
@@ -323,7 +347,6 @@ public class CameraActivity extends Fragment {
                             output.close();
                         }
                     }
-                    progress.doneSaving = true;
                 }
             };
 
@@ -345,14 +368,13 @@ public class CameraActivity extends Fragment {
                         e.printStackTrace();
                     }
                 }
+
                 @Override
                 public void onConfigureFailed(CameraCaptureSession session) {
                 }
             }, mBackgroundHandler);
-            return progress;
         } catch (CameraAccessException e) {
             e.printStackTrace();
-            return new IMGsaved();
         }
     }
 
@@ -443,6 +465,8 @@ public class CameraActivity extends Fragment {
     @Override
     public void onResume() {
         takePictureButton.setVisibility(View.VISIBLE);
+        gallerySelect.setVisibility(View.VISIBLE);
+
         super.onResume();
         Log.e(TAG, "onResume");
         startBackgroundThread();
@@ -473,20 +497,11 @@ public class CameraActivity extends Fragment {
 
     @Override
     public void onPause() {
-        if((retryButton) != null){
-            retryButton.setVisibility(View.INVISIBLE);
-            acceptButton.setVisibility(View.INVISIBLE);
-        }
+        retryButton.setVisibility(View.INVISIBLE);
+        acceptButton.setVisibility(View.INVISIBLE);
         Log.e(TAG, "onPause");
         stopBackgroundThread();
         super.onPause();
         closeCamera();
-    }
-}
-
-class IMGsaved {
-    public boolean doneSaving;
-    public IMGsaved(){
-        this.doneSaving=false;
     }
 }

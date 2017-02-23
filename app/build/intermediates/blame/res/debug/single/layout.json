@@ -8,10 +8,6 @@
         "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/notification_template_big_media_custom.xml"
     },
     {
-        "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/layout/details_activity.xml",
-        "source": "/Users/home/Projects/android/Brunel_repo_project26/app/src/main/res/layout/details_activity.xml"
-    },
-    {
         "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
         "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/notification_template_media_custom.xml"
     },
@@ -132,10 +128,6 @@
         "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/layout/grid_item_layout.xml",
-        "source": "/Users/home/Projects/android/Brunel_repo_project26/app/src/main/res/layout/grid_item_layout.xml"
-    },
-    {
         "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/layout/upload.xml",
         "source": "/Users/home/Projects/android/Brunel_repo_project26/app/src/main/res/layout/upload.xml"
     },
@@ -218,10 +210,6 @@
     {
         "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
         "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/select_dialog_item_material.xml"
-    },
-    {
-        "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/layout/activity_gallery.xml",
-        "source": "/Users/home/Projects/android/Brunel_repo_project26/app/src/main/res/layout/activity_gallery.xml"
     },
     {
         "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",

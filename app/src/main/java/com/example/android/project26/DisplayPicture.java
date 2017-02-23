@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,6 +40,7 @@ public class DisplayPicture extends Activity {
     private ImageView mImageView;
     private Handler mHandler = new Handler();
     private Button btn_upload;
+    private ProgressBar progressBar;
     static final int BUFFER_SIZE = 4096;
     private File image_file = new File(Environment.getExternalStorageDirectory() + "/project26");
 
@@ -50,16 +52,22 @@ public class DisplayPicture extends Activity {
 
         mImageView = (ImageView) findViewById(R.id.image_load);
         Bitmap b = (BitmapFactory.decodeFile(String.valueOf(lastFileModified(String.valueOf(image_file)))));
-
+        progressBar = (ProgressBar)findViewById(R.id.progressBar1);
         mImageView.setImageBitmap(b);
 
-        btn_upload = (Button) findViewById(R.id.btnUpload);
-        btn_upload.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                new sendFile().execute(new String[] {"http://134.83.83.25:47326/Hello"});
-            }
-        });
+
+        //executes the AsyncTask
+        sendFile upload = new sendFile();
+        upload.execute(new String[] {"http://134.83.83.25:47326/Hello"});
+
+
+//        btn_upload = (Button) findViewById(R.id.btnUpload);
+//        btn_upload.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                new sendFile().execute(new String[] {"http://134.83.83.25:47326/Hello"});
+//            }
+//        });
     }
 
     public static File lastFileModified(String dir) {
@@ -126,7 +134,6 @@ public class DisplayPicture extends Activity {
             } catch (IOException ioe) {
                 Log.e("Debug", "error: " + ioe.getMessage(), ioe);
             }
-
             try {
                 // always check HTTP response code from server
                 int responseCode = httpConn.getResponseCode();
@@ -147,8 +154,11 @@ public class DisplayPicture extends Activity {
             return success;
         }
 
+
         @Override
         protected void onPostExecute(String result) {
+
+            progressBar.setVisibility(View.INVISIBLE);
             if (result == null){
                 showToast("Upload Successful");
 
@@ -162,7 +172,6 @@ public class DisplayPicture extends Activity {
                         .build();
 
                 Response response = null;
-
                     response = client.newCall(request).execute();
 
                 TextView textElement = (TextView) findViewById(R.id.output);
@@ -180,21 +189,21 @@ public class DisplayPicture extends Activity {
         protected void onPreExecute() {
             Toast.makeText(getApplicationContext(), "Uploading...",
                     Toast.LENGTH_LONG).show();
+            progressBar.setVisibility(View.VISIBLE);
         }
 
         @Override
         protected void onProgressUpdate(Void... values) {
         }
-
-        private void showToast(final String text)
+    }
+    private void showToast(final String text)
+    {
+        DisplayPicture.this.runOnUiThread(new Runnable()
         {
-            DisplayPicture.this.runOnUiThread(new Runnable()
+            public void run()
             {
-                public void run()
-                {
-                    Toast.makeText(DisplayPicture.this, text, Toast.LENGTH_LONG).show();
-                }
-            });
-        }
+                Toast.makeText(DisplayPicture.this, text, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }

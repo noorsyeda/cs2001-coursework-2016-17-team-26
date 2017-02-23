@@ -28,12 +28,12 @@
         "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_btn_check_material.xml"
     },
     {
-        "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
-        "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/drawable/design_fab_background.xml"
-    },
-    {
         "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/drawable/kk.jpg",
         "source": "/Users/home/Projects/android/Brunel_repo_project26/app/src/main/res/drawable/kk.jpg"
+    },
+    {
+        "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/drawable/design_fab_background.xml"
     },
     {
         "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/drawable/button_bkg.png",
@@ -60,12 +60,12 @@
         "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/drawable/design_snackbar_background.xml"
     },
     {
-        "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_cab_background_top_material.xml"
-    },
-    {
         "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
         "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_cab_background_top_material.xml"
     },
     {
         "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
@@ -176,6 +176,10 @@
         "source": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
+        "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/drawable/btn_analyze.png",
+        "source": "/Users/home/Projects/android/Brunel_repo_project26/app/src/main/res/drawable/btn_analyze.png"
+    },
+    {
         "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/drawable/image_1.jpg",
         "source": "/Users/home/Projects/android/Brunel_repo_project26/app/src/main/res/drawable/image_1.jpg"
     },
@@ -222,5 +226,9 @@
     {
         "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/drawable/blackbutton.png",
         "source": "/Users/home/Projects/android/Brunel_repo_project26/app/src/main/res/drawable/blackbutton.png"
+    },
+    {
+        "merged": "/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/res/merged/debug/drawable/capture.jpg",
+        "source": "/Users/home/Projects/android/Brunel_repo_project26/app/src/main/res/drawable/capture.jpg"
     }
 ]
