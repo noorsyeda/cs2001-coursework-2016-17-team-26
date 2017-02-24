@@ -172,12 +172,12 @@
         "source": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
-        "source": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\layout\\design_navigation_item.xml"
-    },
-    {
         "merged": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
         "source": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\layout\\design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\layout\\design_navigation_item.xml"
     },
     {
         "merged": "C:\\Users\\dawoo\\AndroidStudioProjects\\cs2001-coursework-2016-17-team-26\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",

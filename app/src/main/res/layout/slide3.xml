@@ -15,7 +15,7 @@
         <ImageView
             android:layout_width="@dimen/img_width"
             android:layout_height="@dimen/img_height"
-            android:src="@drawable/ic_slide3" />
+            android:src="@drawable/re" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -32,10 +32,11 @@
             android:layout_marginTop="22dp"
             android:paddingLeft="40sp"
             android:paddingRight="@dimen/desc_padding"
-            android:text="@string/desc_slide3"
+            android:text="The output of the image is shown to you in percentages which is closet to accuracy. "
             android:textAlignment="center"
             android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 
