@@ -13,9 +13,12 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="@dimen/img_width"
+            android:layout_width="match_parent"
             android:layout_height="@dimen/img_height"
-            android:src="@drawable/ic_slide1" />
+            android:src="@drawable/ic_slide1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,8 +34,9 @@
             android:layout_marginTop="22dp"
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
-            android:text="@string/desc_slide1"
+                android:text="You can take photo by pressing camera button which you want to recognize. "
             android:textAlignment="center"
+            android:textStyle="bold"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 

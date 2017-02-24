@@ -15,7 +15,7 @@
         <ImageView
             android:layout_width="@dimen/img_width"
             android:layout_height="@dimen/img_height"
-            android:src="@drawable/ic_slide4" />
+            android:src="@drawable/oo" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,7 +31,8 @@
             android:layout_marginTop="22dp"
             android:paddingLeft="42dp"
             android:paddingRight="43dp"
-            android:text="@string/desc_slide2"
+            android:textStyle="bold"
+            android:text="After taking picture wait for some little time for processing and matching. "
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
