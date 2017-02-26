@@ -1,5 +1,9 @@
 
-Start
+This is just design of pseudocode , its not the orginal one which is created at the beginning of project.
+
+
+
+( Start
 	Get the Application
         Take the picture
 Else
@@ -14,4 +18,6 @@ Else
 	DISPLAY the error
 ENDIF
 
-END
+END) 
+
+
