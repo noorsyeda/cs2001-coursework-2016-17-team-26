@@ -1,68 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:orientation="vertical"
-    android:padding="16dp">
 
-    <TextView
-        android:id="@+id/contact_form_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="5dp"
-        android:text="Group 26 app"
-        android:textColor="#7c0915"
-        android:textSize="50sp"
-        android:typeface="serif" />
+    android:layout_height="match_parent">
 
-    <EditText
+
+    <ImageView
+
+        android:src="@drawable/kk"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:hint="Name"
-        android:inputType="textPersonName" />
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop = "20dp"
 
-    <EditText
-        android:layout_width="fill_parent"
+
+        />
+
+
+
+
+    <!-- Header aligned to top -->
+
+
+
+    <RelativeLayout
+
+        android:id="@+id/header"
+
+        android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:hint="Email"
-        android:inputType="textEmailAddress" />
 
-    <EditText
-        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+
+        android:background="#FC9"
+
+        android:gravity="center"
+        tools:background="?android:attr/colorButtonNormal">
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+
+            android:text="Contact us"
+
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <!-- Footer aligned to bottom -->
+
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+
+        android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:hint="Phone"
-        android:inputType="phone" />
 
-    <EditText
+        android:layout_alignParentBottom="true"
+
+        android:background="#FC0"
+
+        android:gravity="center" >
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_margin="15dp"
+
+            android:text="Brunel University"
+
+            android:textColor="#000"
+
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+
+
+    <!-- Content below header and above footer -->
+
+
+    <RelativeLayout
+
+        android:id="@+id/content"
+
         android:layout_width="fill_parent"
-        android:layout_height="150dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:gravity="top"
-        android:hint="Your Message"
-        android:fitsSystemWindows="true"
-        android:breakStrategy="balanced"
-        android:inputType="textMultiLine"
-        android:singleLine="false"
-        android:padding="5dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:background="@color/colorPrimaryDark"
-        android:elevation="4dp"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp"
-        android:text="Send "
-        android:textColor="#b3c7cf" />
-</LinearLayout>
+        android:layout_height="fill_parent"
+
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textColorLink="@android:color/holo_red_dark"
+
+            android:text="If you have any question or query regarding our application contact us via our website, find the link next Thankyou!
+
+
+            https://www.edwardwebpage.com/"
+
+            android:id="@+id/link"
+            android:autoLink="all"
+
+            android:clickable="true"
+
+
+
+            android:textColor="#33E"
+            android:textStyle="bold"
+
+
+            android:textSize="20sp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
