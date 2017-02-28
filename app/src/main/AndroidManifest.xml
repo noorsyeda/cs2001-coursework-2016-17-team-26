@@ -30,6 +30,11 @@
             android:label="Project26">
 
         </activity>
+        <activity android:name=".CameraActivity"
+            android:label="Project26">
+
+        </activity>
+
         <activity android:name=".DisplayPictureForGallery"
             android:label="Project26">
 

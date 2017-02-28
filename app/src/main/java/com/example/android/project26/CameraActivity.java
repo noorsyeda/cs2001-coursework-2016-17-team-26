@@ -205,6 +205,7 @@ public class CameraActivity extends Fragment {
         gallerySelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 view.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.image_click));
                 Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 intent.setType("image/*");
@@ -216,6 +217,7 @@ public class CameraActivity extends Fragment {
         return rootView;
         // Inflate the layout for this fragment
     }
+
 //
 //    public void removeLastImage(){
 //        File folder = new File("/project26");
@@ -379,7 +381,6 @@ public class CameraActivity extends Fragment {
     }
 
 
-
     protected void createCameraPreview() {
         try {
             SurfaceTexture texture = textureView.getSurfaceTexture();
@@ -497,10 +498,9 @@ public class CameraActivity extends Fragment {
 
     @Override
     public void onPause() {
-        retryButton.setVisibility(View.INVISIBLE);
-        acceptButton.setVisibility(View.INVISIBLE);
         Log.e(TAG, "onPause");
         stopBackgroundThread();
+
         super.onPause();
         closeCamera();
     }

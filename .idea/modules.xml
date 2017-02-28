@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Brunel_repo_project26.iml" filepath="$PROJECT_DIR$/Brunel_repo_project26.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cs2001-coursework-2016-17-team-26.iml" filepath="$PROJECT_DIR$/cs2001-coursework-2016-17-team-26.iml" />
     </modules>
   </component>
 </project>

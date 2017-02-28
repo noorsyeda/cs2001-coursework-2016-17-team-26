@@ -40,7 +40,9 @@ public class DisplayPicture extends Activity {
     private ImageView mImageView;
     private Handler mHandler = new Handler();
     private Button btn_upload;
-    private ProgressBar progressBar;
+    private TextView progress;
+    private TextView textElement;
+    private ProgressBar loading;
     static final int BUFFER_SIZE = 4096;
     private File image_file = new File(Environment.getExternalStorageDirectory() + "/project26");
 
@@ -52,8 +54,11 @@ public class DisplayPicture extends Activity {
 
         mImageView = (ImageView) findViewById(R.id.image_load);
         Bitmap b = (BitmapFactory.decodeFile(String.valueOf(lastFileModified(String.valueOf(image_file)))));
-        progressBar = (ProgressBar)findViewById(R.id.progressBar1);
+        loading = (ProgressBar)findViewById(R.id.loading_bar);
+        progress = (TextView) findViewById(R.id.progress);
+        textElement = (TextView) findViewById(R.id.output);
         mImageView.setImageBitmap(b);
+
 
 
         //executes the AsyncTask
@@ -158,7 +163,6 @@ public class DisplayPicture extends Activity {
         @Override
         protected void onPostExecute(String result) {
 
-            progressBar.setVisibility(View.INVISIBLE);
             if (result == null){
                 showToast("Upload Successful");
 
@@ -174,22 +178,31 @@ public class DisplayPicture extends Activity {
                 Response response = null;
                     response = client.newCall(request).execute();
 
-                TextView textElement = (TextView) findViewById(R.id.output);
+
+
                     textElement.setVisibility(View.VISIBLE);
                     textElement.setText(response.body().string());
+                    if (response == null){
+                    }
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }else{
                 showToast("Upload Failed");
+                textElement.setVisibility(View.VISIBLE);
+                textElement.setText("No connection to the server.");
             }
+
         }
 
         @Override
         protected void onPreExecute() {
+            textElement.setVisibility(View.VISIBLE);
+            textElement.setText("Loading...");
             Toast.makeText(getApplicationContext(), "Uploading...",
                     Toast.LENGTH_LONG).show();
-            progressBar.setVisibility(View.VISIBLE);
+            super.onPreExecute();
+
         }
 
         @Override

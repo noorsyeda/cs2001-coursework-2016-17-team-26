@@ -16,7 +16,6 @@ import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileFilter;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -38,6 +37,7 @@ public class DisplayPictureForGallery extends Activity {
     private ImageView mImageView;
     private Handler mHandler = new Handler();
     private Button btn_upload;
+    TextView textElement;
     static final int BUFFER_SIZE = 4096;
 
 
@@ -45,6 +45,9 @@ public class DisplayPictureForGallery extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.upload);
+        textElement
+
+                = (TextView) findViewById(R.id.output);
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
@@ -66,24 +69,6 @@ public class DisplayPictureForGallery extends Activity {
     }
 
 
-
-    public static File lastFileModified(String dir) {
-        File fl = new File(dir);
-        File[] files = fl.listFiles(new FileFilter() {
-            public boolean accept(File file) {
-                return file.isFile();
-            }
-        });
-        long lastMod = Long.MIN_VALUE;
-        File choice = null;
-        for (File file : files) {
-            if (file.lastModified() > lastMod) {
-                choice = file;
-                lastMod = file.lastModified();
-            }
-        }
-        return choice;
-    }
 
     private class sendFile extends AsyncTask<String, Void, String> {
         public String success = "Success";
@@ -174,7 +159,6 @@ public class DisplayPictureForGallery extends Activity {
 
                     response = client.newCall(request).execute();
 
-                TextView textElement = (TextView) findViewById(R.id.output);
                     textElement.setVisibility(View.VISIBLE);
                     textElement.setText(response.body().string());
                 } catch (IOException e) {
@@ -187,8 +171,11 @@ public class DisplayPictureForGallery extends Activity {
 
         @Override
         protected void onPreExecute() {
+            textElement.setVisibility(View.VISIBLE);
+            textElement.setText("Loading...");
             Toast.makeText(getApplicationContext(), "Uploading...",
                     Toast.LENGTH_LONG).show();
+            super.onPreExecute();
         }
 
         @Override
