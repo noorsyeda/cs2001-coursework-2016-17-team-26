@@ -39,7 +39,7 @@ import okhttp3.Response;
 public class DisplayPicture extends Activity {
     private ImageView mImageView;
     private Handler mHandler = new Handler();
-    private Button btn_upload;
+    private Button retry;
     private TextView progress;
     private TextView textElement;
     private ProgressBar loading;
@@ -58,7 +58,15 @@ public class DisplayPicture extends Activity {
         progress = (TextView) findViewById(R.id.progress);
         textElement = (TextView) findViewById(R.id.output);
         mImageView.setImageBitmap(b);
+        retry = (Button)findViewById(R.id.btn_retry);
+        retry.setOnClickListener(new Button.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                finish();
 
+            }
+        });
 
 
         //executes the AsyncTask
@@ -192,7 +200,7 @@ public class DisplayPicture extends Activity {
                 textElement.setVisibility(View.VISIBLE);
                 textElement.setText("No connection to the server.");
             }
-
+            retry.setVisibility(View.VISIBLE);
         }
 
         @Override

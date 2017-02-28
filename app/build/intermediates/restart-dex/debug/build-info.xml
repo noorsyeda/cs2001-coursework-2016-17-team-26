@@ -5,22 +5,22 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="22478125375650"
+    timestamp="25560914026518"
     token="-5316882854874524362"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="302" />
+        duration="740" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="12" />
+        duration="70" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
 
     <artifact
         location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
@@ -34,14 +34,14 @@
             type="MAIN" />
     </build>
     <build
-        timestamp="20972100731390"
+        timestamp="25419950579486"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
             type="RESOURCES" />
     </build>
     <build
-        timestamp="22478125375650"
+        timestamp="25560914026518"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/home/Projects/android/Brunel_repo_project26/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"

@@ -38,6 +38,7 @@ public class DisplayPictureForGallery extends Activity {
     private Handler mHandler = new Handler();
     private Button btn_upload;
     TextView textElement;
+    private Button retry;
     static final int BUFFER_SIZE = 4096;
 
 
@@ -56,6 +57,15 @@ public class DisplayPictureForGallery extends Activity {
             Bitmap b = (BitmapFactory.decodeFile(path));
             mImageView.setImageBitmap(b);
         }
+        retry = (Button)findViewById(R.id.btn_retry);
+        retry.setOnClickListener(new Button.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                finish();
+
+            }
+        });
 
 
 
@@ -167,6 +177,7 @@ public class DisplayPictureForGallery extends Activity {
             }else{
                 showToast("Upload Failed");
             }
+            retry.setVisibility(View.VISIBLE);
         }
 
         @Override
