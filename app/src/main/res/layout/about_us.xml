@@ -17,6 +17,14 @@
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:layout_marginTop = "20dp"
+
+
+
+
+
+
+
+
         />
 
 
@@ -50,7 +58,7 @@
 
             android:layout_margin="5dp"
 
-            android:text="Group project 26"
+            android:text="Padner"
 
             android:textColor="#000"
 
@@ -127,11 +135,12 @@
 
             android:layout_height="wrap_content"
 
-            android:text="This is the application created by  six Brunel University London students in  their Group project"
+            android:text="Every groundbreaking App begins with a series of small ideas that are combined into an all inclusive one. At Padner , we wanted to change how consumers see the concept of photo recognition, by offering a simple and user-friendly platform they can trust. Our lean team of developers have dedicated an immense amount of time and effort to ensure that your image recogntion is simple and secure."
 
-            android:textColor="#33E"
+            android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"
 
+            android:layout_marginTop = "60dp"
 
             android:textSize="20sp" />
 
@@ -139,3 +148,5 @@
 
 
 </RelativeLayout>
+
+
