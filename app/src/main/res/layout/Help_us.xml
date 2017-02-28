@@ -17,7 +17,11 @@
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:layout_marginTop = "20dp"
+
+
         />
+
+
 
 
     <!-- Header aligned to top -->
@@ -124,7 +128,7 @@
 
             android:layout_height="wrap_content"
 
-            android:text="This is the image recognition application in which user can take or choose photo of his choice then when it select the photo , system will analyze it and shows the output close to accuracy, whether this picture is correct or not"
+            android:text="This is the image recognition application in which user can take or choose photo of his choice then when it select the photo , system will analyze it and shows the output close to accuracy, whether this picture is correct or not.You can also view the guide which we provided at the start of application"
 
             android:textColor="#33E"
             android:textStyle="bold"
