@@ -21,7 +21,7 @@ This is an application that uses image recognition AI to identify objects from i
 |~~Mobile Prototype Demo~~   | ~~9 Dec 2016~~  |  
 | ~~Peer and Self Assessment~~ | ~~16 Dec 2016~~   | 
 | ~~Beta System Demo~~    | ~~10 Feb 2017~~ | 
-| System Demo Video    | 24 Feb 2017 | 
+| ~~System Demo Video  ~~  | ~~24 Feb 2017~~ | 
 | Group Presentation Demo   | 16 March 2017 | 
 | Portfolio Assessment| 24 March 2016 | 
 
